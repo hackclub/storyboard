@@ -316,8 +316,10 @@ iframe:hover{
 }
 
 .example {
-  display:flex;
-  flex-wrap:wrap;
+  /* display:flex; */
+  /* flex-wrap:wrap; */
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(400px, 1fr)) ;
   column-gap:20px; 
   row-gap:10px;
   max-width:100%;
@@ -337,7 +339,7 @@ iframe:hover{
   background-size:cover;
   flex-grow:1;
   max-width:500px;
-  overflow:hidden
+  overflow:hidden;
 
 }
 
@@ -356,7 +358,7 @@ iframe:hover{
 
 
 .item:before {
-  background-image:linear-gradient(to bottom, #9b81f085, #3e2e9bcc);
+  background-image:linear-gradient(to bottom, #9b81f062, #3e2e9bde);
   content:'';
   position:absolute;
   left:0; 
