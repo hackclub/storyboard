@@ -522,7 +522,7 @@ img.logo {
   .landing-page {
     min-height:100vh;
     width:100vw;
-    background: url("assets/crumpled paper.png") no-repeat center center fixed;
+    background: url("assets/crumpled paper.webp") no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -538,7 +538,7 @@ img.logo {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: url("assets/tear paper.png") no-repeat bottom center;
+    background: url("assets/tear paper.webp") no-repeat bottom center;
     background-size: cover;
   } 
 
