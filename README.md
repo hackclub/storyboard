@@ -3,6 +3,8 @@
 
 ## Make a visual novel, get cool prizes! 
 
-With new themes, challenges and prizes every month! If you're reading this, then Storyboard is running right now!
+With new themes, challenges and prizes every month! 
 
 More info on the [website](https://storyboard.hackclub.com/) and [slack](https://hackclub.slack.com/archives/C095E84SE1X)
+
+#### Storyboard V2 has officially ended. See you around!
