@@ -184,7 +184,7 @@ button {
 .prize-card {
 	position: relative;
 	flex: none;
-	width: clamp(280px, 34vw, 380px);
+	width: clamp(200px, 40vw, 240px);
 	aspect-ratio: 3 / 4;
 	display: flex;
 	align-items: center;
@@ -193,7 +193,8 @@ button {
 	font-size: 1.75rem;
 	text-align: center;
 	transform: perspective(1200px) rotateX(2deg) rotateY(20deg);
-	backdrop-filter: blur(8px);
+	box-shadow: #534784d8 10px 10px 10px;
+	
 	transition: transform 200ms ease;
 	outline: 2px solid var(--color-purple-darkest);
 	overflow: hidden;

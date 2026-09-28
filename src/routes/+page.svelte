@@ -71,7 +71,43 @@
 			hours: '20 hours',
 			description: 'click click clack clack',
 			src: '/prizes/keyboard.webp'
-		}
+		},
+		{
+			title: 'Steam Dev License',
+			hours: '30 hours',
+			description: 'upload your game to steam!!! get big money?',
+			src: '/prizes/steamlicense.jpg'
+		},
+		{
+			title: 'Hoodie? 👀👀👀👀👀',
+			hours: '15 hours',
+			description: 'sparkly shiny and theres a funny cat too',
+			src: '/prizes/hoodie.png'
+		},
+		{
+			title: 'Drawing Tablet',
+			hours: '50 hours',
+			description: 'draw a visual novel & get a drawing tablet to... draw more visual novels',
+			src: '/prizes/drawingtablet.webp'
+		},
+		{
+			title: 'Fat Cat Plushie',
+			hours: '15 hours',
+			description: 'SOO CUTE',
+			src: '/prizes/plushie.jpg'
+		},
+		{
+			title: 'Stickers',
+			hours: '1 hour',
+			description: 'cool stickers drawn by the supercoolawesome storyboard team!',
+			src: '/prizes/stickersheet.png'
+		},
+		{
+			title: 'Keyboard',
+			hours: '20 hours',
+			description: 'click click clack clack',
+			src: '/prizes/keyboard.webp'
+		},
 	];
 
 	const prizeColors = [
@@ -292,7 +328,7 @@
 
 		<h2 class="prizes-text m-4 text-2xl text-white" id="prizes">...and we'll send you prizes!</h2>
 		<!-- scrolling prizes  -->
-		<div
+		<!-- <div
 			class="prize-scroll"
 			bind:this={scrollRef}
 			role="region"
@@ -338,6 +374,35 @@
 					{/each}
 				</div>
 			</div>
+		</div> -->
+		<div
+			// class="prize-scroll"
+			// bind:this={scrollRef}
+			// role="region"
+			// aria-label="prizes"
+			// onmouseenter={() => (hovering = true)}
+			// onmouseleave={() => (hovering = false)}
+		>
+			<div class="">
+				<div class="grid grid-cols-4 grid-rows-4 place-items-center gap-4 space-y-8">
+					{#each prizes as prize, i}
+						<div
+							class="prize-card flex flex-col items-center justify-between p-6 text-center"
+							style="background-color: {prizeColors[i % prizeColors.length]
+								.bg}; color: {prizeColors[i % prizeColors.length].text}"
+						>
+							<h1 class="mt-4 text-2xl underline">{prize.title}</h1>
+							<p class="mt-4 text-base">{prize.description}</p>
+							<!-- <img
+								src={prize.src}
+								alt={prize.title}
+								class="m-4 min-h-0 w-full flex-1 rounded-sm object-contain"
+							/> -->
+							<p class="text-lg mt-auto dark rounded-xs">{prize.hours}</p>
+						</div>
+					{/each}
+				</div>
+				</div>
 		</div>
 		<!-- guides -->
 		<div class="guides flex w-full flex-col items-center justify-center gap-4 text-center">
