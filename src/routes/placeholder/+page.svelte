@@ -26,8 +26,8 @@
 				class="text-pink-purple underline hover:decoration-wavy">@kat</a
 			>
 			on slack or email
-			<a href="mailto:kat@hackclub.com" class="text-pink-purple underline hover:decoration-wavy"
-				>kat@hackclub.com</a
+			<a href="mailto:storyboard@hackclub.com" class="text-pink-purple underline hover:decoration-wavy"
+				>storyboard@hackclub.com</a
 			>
 			and tell her how you got here.
 			<br />

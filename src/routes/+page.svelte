@@ -342,46 +342,46 @@
 		<!-- guides -->
 		<div class="guides flex w-full flex-col items-center justify-center gap-4 text-center">
 			<h2 class="text-glow text-2xl text-white"><b>we have step-by-step guides to help:</b></h2>
-			<div class="guides-grid m-6 grid w-full grid-cols-1 md:w-1/2 md:grid-cols-2">
-				<div class="guide-container">
+			<div class="guides-grid m-6 grid w-full grid-cols-1 md:w-3/4 lg:w-2/3 xl:w-1/2 md:grid-cols-2">
+				<a href="https://docs.google.com/document/d/1tfEr_6A3tlXod_1El_F757lU6MpuZNft8vFeGw0q808/edit?usp=sharing" class="guide-container">
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
-						<h1 class="text-xl leading-4">
+						<h1 class="text-xl leading-5">
 							How to Track Hours <i class="text-sm">(so you can get prizes!)</i>
 						</h1>
 						<p>by @Susan</p>
 					</div>
-				</div>
-				<div class="guide-container">
+				</a>
+				<a href="https://www.canva.com/design/DAGwcjmWlZQ/cUCpoAELlKlByVjLzmoCRw/view?embed" class="guide-container">
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
-						<h1 class="text-xl leading-4">Storywriting Guide</h1>
+						<h1 class="text-xl leading-5">Storywriting Guide</h1>
 						<p>by @yunfei</p>
 					</div>
-				</div>
-				<div class="guide-container">
+				</a>
+				<a href="https://ikealoverkat.github.io/storyboard2/" class="guide-container">
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<p class="text-sm">HOW TO CODE A VISUAL NOVEL</p>
-						<h1 class="text-xl leading-4">Ren'Py Quickstart Doc</h1>
+						<h1 class="text-xl leading-5">Ren'Py Quickstart Doc</h1>
 						<p>by @kat</p>
 					</div>
-				</div>
-				<div class="guide-container">
+				</a>
+				<a href="https://www.canva.com/design/DAGwqnw-zrA/3dG1zywd0SWtJ3xOUwylVA/view?embed" class="guide-container">
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<p class="text-sm">HOW TO CODE A VISUAL NOVEL</p>
-						<h1 class="text-xl leading-4">Ren'Py Quickstart Slide</h1>
+						<h1 class="text-xl leading-5">Ren'Py Quickstart Slide</h1>
 						<p>by @shyla</p>
 					</div>
-				</div>
-				<div class="guide-container">
+				</a>
+				<a href="https://www.canva.com/design/DAGwqnw-zrA/3dG1zywd0SWtJ3xOUwylVA/view?embed" class="guide-container">
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<h1 class="text-xl leading-4">...</h1>
 						<p>by @...</p>
 					</div>
-				</div>
+				</a>
 				<div class="guide-container">
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
@@ -438,8 +438,8 @@
 				>#storyboard-help</a
 			>
 			or email
-			<a href="mailto:kat@hackclub.com" class="text-pink-purple underline hover:decoration-wavy"
-				>kat@hackclub.com</a
+			<a href="mailto:storyboard@hackclub.com" class="text-pink-purple underline hover:decoration-wavy"
+				>storyboard@hackclub.com</a
 			>
 		</h2>
 	</div>
