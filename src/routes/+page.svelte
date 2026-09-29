@@ -12,9 +12,9 @@
 	}
 
 	interface teamMember {
-		name: string,
-		src: string,
-		link: string
+		name: string;
+		src: string;
+		link: string;
 	}
 
 	const teamMembers: teamMember[] = [
@@ -22,18 +22,18 @@
 			name: 'kat wang',
 			src: '/pfp_kat.png',
 			link: 'https://kat.wang'
-		}, 
+		},
 		{
 			name: 'kaylee dinh',
 			src: '/pfp_kaylee.png',
 			link: 'https://github.com/kaylz-d'
-		}, 
+		},
 		{
 			name: 'yunfei shuai',
 			src: '/pfp_yunfei.png',
 			link: 'https://small-n-stupid.vercel.app/'
-		}, 				
-	]
+		}
+	];
 
 	const prizes: Prize[] = [
 		{
@@ -107,7 +107,7 @@
 			hours: '20 hours',
 			description: 'click click clack clack',
 			src: '/prizes/keyboard.webp'
-		},
+		}
 	];
 
 	const prizeColors = [
@@ -131,20 +131,23 @@
 		},
 		{
 			question: 'How do I track my hours?',
-			answer: 'Coding hours are tracked with Hackatime, and art hours are tracked with Lapse. Check out the "How to Track Hours" guide above if you\u2019re not sure how it works!'
+			answer:
+				'Coding hours are tracked with Hackatime, and art hours are tracked with Lapse. Check out the "How to Track Hours" guide above if you\u2019re not sure how it works!'
 		},
 		{
 			question: 'What can I use to make my visual novel?',
 			answer:
 				'Anything! Ren\u2019Py is a great starting point, but you are free to use whatever you like.'
-		}, 
+		},
 		{
 			question: 'Do I NEED Slack? What even is Slack??',
-			answer: 'Yes! Slack is like Hack Club\u2019s Discord. Join to chat with loads of other teens who like to make projects, and recieve updates from the Storyboard team! :)'
+			answer:
+				'Yes! Slack is like Hack Club\u2019s Discord. Join to chat with loads of other teens who like to make projects, and recieve updates from the Storyboard team! :)'
 		}
 	];
 
 	import { onMount } from 'svelte';
+	import StoryboardtoberCalendar from '$lib/components/StoryboardtoberCalendar.svelte';
 
 	let scrollRef: HTMLElement | undefined;
 	let trackRef: HTMLElement | undefined;
@@ -222,8 +225,23 @@
 		<h1 class="text-glow text-center text-2xl text-teal md:text-3xl">
 			make a visual novel, get cool prizes!
 		</h1>
+		<h1 class="text-glow text-center text-xl text-yellow md:text-3xl">
+			<b>Storyboardtober is currently running!</b> make a visual novel in 1 month, and get prizes EVERY DAY.
+		</h1>		
 		<div class="m-6 flex w-full flex-col items-center justify-center gap-4 md:w-1/2 md:flex-row">
-			<input
+			<a
+				class="bg-teal  hover:bg-whiteish hover:scale-105 duration-200 w-4/5 rounded-4xl p-4 text-2xl outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
+				href="#how"
+			>
+				GET STARTED
+		</a>
+			<a
+				class="bg-pink-purple hover:bg-whiteish hover:scale-105 duration-200 w-4/5 rounded-4xl p-4 text-2xl outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
+				href="/placeholder"
+			>
+				SUBMIT!
+			</a>
+			<!-- <input
 				type="email"
 				name="email"
 				autocomplete="email"
@@ -233,7 +251,7 @@
 			<button
 				class="ok-btn w-4/5 rounded-4xl p-4 text-2xl outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
 				>OK!</button
-			>
+			> -->
 		</div>
 	</div>
 	<!-- windows -->
@@ -324,6 +342,24 @@
 					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_prize.png" />
 				</div>
 			</div>
+			<div class="sbtb-box">
+				<h1 class="text-3xl text-purple-darkest m-6 underline">wait, what about <b>Storyboardtober</b>?</h1>
+				<ul class="text-2xl leading-12 text-purple-dark">
+			d		<li>1. choose your theme(s) from the calendar below...</li>
+					<li>
+						2. work on your visual novel for just 1 hour every day! (yes, you can work on it for longer.)
+					</li>
+					<li>
+						3. get a unique sticker for every day that you work on your project!
+					</li>
+					<li>
+						4. get a bigger prize at the end!!!
+					</li>
+					<li>
+						5. you'll have YOUR OWN visual novel, a bunch of stickers & and an awesome prize :D</li>
+				</ul>
+			</div>
+			<StoryboardtoberCalendar />
 		</div>
 
 		<h2 class="prizes-text m-4 text-2xl text-white" id="prizes">...and we'll send you prizes!</h2>
@@ -375,14 +411,7 @@
 				</div>
 			</div>
 		</div> -->
-		<div
-			// class="prize-scroll"
-			// bind:this={scrollRef}
-			// role="region"
-			// aria-label="prizes"
-			// onmouseenter={() => (hovering = true)}
-			// onmouseleave={() => (hovering = false)}
-		>
+		<div>
 			<div class="">
 				<div class="grid grid-cols-4 grid-rows-4 place-items-center gap-4 space-y-8">
 					{#each prizes as prize, i}
@@ -398,17 +427,22 @@
 								alt={prize.title}
 								class="m-4 min-h-0 w-full flex-1 rounded-sm object-contain"
 							/> -->
-							<p class="text-lg mt-auto dark rounded-xs">{prize.hours}</p>
+							<p class="dark mt-auto rounded-xs text-lg">{prize.hours}</p>
 						</div>
 					{/each}
 				</div>
-				</div>
+			</div>
 		</div>
 		<!-- guides -->
 		<div class="guides flex w-full flex-col items-center justify-center gap-4 text-center">
 			<h2 class="text-glow text-2xl text-white"><b>we have step-by-step guides to help:</b></h2>
-			<div class="guides-grid m-6 grid w-full grid-cols-1 md:w-3/4 lg:w-2/3 xl:w-1/2 md:grid-cols-2">
-				<a href="https://docs.google.com/document/d/1tfEr_6A3tlXod_1El_F757lU6MpuZNft8vFeGw0q808/edit?usp=sharing" class="guide-container">
+			<div
+				class="guides-grid m-6 grid w-full grid-cols-1 md:w-3/4 md:grid-cols-2 lg:w-2/3 xl:w-1/2"
+			>
+				<a
+					href="https://docs.google.com/document/d/1tfEr_6A3tlXod_1El_F757lU6MpuZNft8vFeGw0q808/edit?usp=sharing"
+					class="guide-container"
+				>
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<h1 class="text-xl leading-5">
@@ -417,7 +451,10 @@
 						<p>by @Susan</p>
 					</div>
 				</a>
-				<a href="https://www.canva.com/design/DAGwcjmWlZQ/cUCpoAELlKlByVjLzmoCRw/view?embed" class="guide-container">
+				<a
+					href="https://www.canva.com/design/DAGwcjmWlZQ/cUCpoAELlKlByVjLzmoCRw/view?embed"
+					class="guide-container"
+				>
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<h1 class="text-xl leading-5">Storywriting Guide</h1>
@@ -432,7 +469,10 @@
 						<p>by @kat</p>
 					</div>
 				</a>
-				<a href="https://www.canva.com/design/DAGwqnw-zrA/3dG1zywd0SWtJ3xOUwylVA/view?embed" class="guide-container">
+				<a
+					href="https://www.canva.com/design/DAGwqnw-zrA/3dG1zywd0SWtJ3xOUwylVA/view?embed"
+					class="guide-container"
+				>
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<p class="text-sm">HOW TO CODE A VISUAL NOVEL</p>
@@ -440,7 +480,10 @@
 						<p>by @shyla</p>
 					</div>
 				</a>
-				<a href="https://www.canva.com/design/DAGwqnw-zrA/3dG1zywd0SWtJ3xOUwylVA/view?embed" class="guide-container">
+				<a
+					href="https://www.canva.com/design/DAGwqnw-zrA/3dG1zywd0SWtJ3xOUwylVA/view?embed"
+					class="guide-container"
+				>
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<h1 class="text-xl leading-4">...</h1>
@@ -503,8 +546,9 @@
 				>#storyboard-help</a
 			>
 			or email
-			<a href="mailto:storyboard@hackclub.com" class="text-pink-purple underline hover:decoration-wavy"
-				>storyboard@hackclub.com</a
+			<a
+				href="mailto:storyboard@hackclub.com"
+				class="text-pink-purple underline hover:decoration-wavy">storyboard@hackclub.com</a
 			>
 		</h2>
 	</div>
@@ -517,11 +561,15 @@
 		made with <b class="text-4xl text-magenta">♡</b> by teens, for teens
 	</h1>
 	<!-- team -->
-	<div class="flex flex-row gap-2 m-6 duration-200">
+	<div class="m-6 flex flex-row gap-2 duration-200">
 		{#each teamMembers as member}
-			<div class="flex flex-col mx-2 group transition-all duration-200 hover:scale-110">
-				<img src={member.src} alt={member.name} class="outline outline-whiteish mb-2 rounded-[4rem] w-20 h-20 object-cover">
-				<p class="caption-fadein group-hover:block hidden text-whiteish">{member.name}</p>
+			<div class="group mx-2 flex flex-col transition-all duration-200 hover:scale-110">
+				<img
+					src={member.src}
+					alt={member.name}
+					class="mb-2 h-20 w-20 rounded-[4rem] object-cover outline outline-whiteish"
+				/>
+				<p class="caption-fadein hidden text-whiteish group-hover:block">{member.name}</p>
 			</div>
 		{/each}
 	</div>
@@ -544,7 +592,7 @@
 	</p>
 	<p class="text-xl text-pink-purple">
 		this website is <a
-			href="https://github.com/ikealoverkat/storyboard-v3"
+			href="https://github.com/hackclub/storyboard"
 			class="text-teal underline hover:decoration-wavy">open source!</a
 		>
 	</p>

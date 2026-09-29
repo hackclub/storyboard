@@ -18,7 +18,7 @@
 		</h1>
 		<br />
 		<p class="text-glow text-lg text-pretty text-yellow md:text-xl lg:text-2xl">
-			it will soon though!! once storyboard fully launches, you shouldn't be able to find this page.
+			it will soon though!! by mid-october, you shouldn't be able to find this page.
 			<br />
 			<br />if you do, PLSPLSPLS dm
 			<a
@@ -29,7 +29,7 @@
 			<a href="mailto:storyboard@hackclub.com" class="text-pink-purple underline hover:decoration-wavy"
 				>storyboard@hackclub.com</a
 			>
-			and tell her how you got here.
+			and tell them how you got here.
 			<br />
 			<br /> uh oh....
 		</p>

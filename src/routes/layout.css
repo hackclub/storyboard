@@ -25,7 +25,8 @@ h1,
 h2,
 h3,
 input,
-button {
+button,
+li {
 	font-family: 'Hedvig Letters Serif', serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
@@ -75,7 +76,8 @@ button {
 	.prize-card:hover,
 	.prize-card:nth-child(odd):hover,
 	.how-container:hover,
-	.guide-container:hover {
+	.guide-container:hover,
+	.sbtb-cal-day:hover {
 		transform: none;
 	}
 }
@@ -146,6 +148,251 @@ button {
 	font-size: larger;
 	color: var(--color-purple-darkest);
 	filter: drop-shadow(0px 2px 0px var(--color-purple-darkest));
+}
+
+/* storyboardtober box */
+.sbtb-box {
+	position: relative;
+	padding: 1.2rem;
+	margin-top: 3rem;
+	
+	border: 2px solid var(--color-whiteish);
+	background-color: color-mix(in srgb, var(--color-whiteish) 70%, transparent);
+	backdrop-filter: blur(8px);
+	transition: all;
+	transition-duration: 200ms;
+}
+.sbtb-box:hover {
+	padding: 1.3rem;
+	transform: scale(1.03, 1.03);
+}
+
+.sbtb-box::after {
+	content: '';
+	position: absolute;
+	inset: -2px;
+	border: 2px solid transparent;
+	box-shadow: 8px 8px 2px var(--color-purple-darkest);
+	pointer-events: none;
+}
+
+/* storyboardtober calendar */
+
+.sbtb-calendar {
+	width: min(100% - 1.5rem, 76rem);
+	margin: 3rem auto 0;
+	padding: clamp(1.25rem, 3.5vw, 3rem) clamp(0.9rem, 2.5vw, 2rem);
+	border-radius: 1.75rem;
+	background-color: color-mix(in srgb, var(--color-purple-darkest) 88%, transparent);
+	backdrop-filter: blur(10px);
+	outline: 1px solid color-mix(in srgb, var(--color-purple-mid) 55%, transparent);
+	box-shadow: 0px 18px 40px color-mix(in srgb, black 45%, transparent);
+	color: var(--color-whiteish);
+	text-align: center;
+}
+
+.sbtb-cal-header {
+	margin-bottom: 1.5rem;
+	font-family: 'Hedvig Letters Serif', serif;	
+}
+
+.sbtb-cal-title {
+	font-size: clamp(1.35rem, 3.5vw, 2.5rem);
+	color: var(--color-yellow);
+	font-family: 'Hedvig Letters Serif', serif;
+	text-shadow: 0px 0px 12px color-mix(in srgb, var(--color-yellow) 55%, transparent);
+	text-decoration: underline;
+	text-underline-offset: 6px;
+}
+
+.sbtb-cal-sub {
+	margin-top: 0.5rem;
+	font-size: clamp(0.8rem, 1.8vw, 1.2rem);
+	color: var(--color-teal);
+}
+
+.sbtb-cal-grid {
+	display: grid;
+	grid-template-columns: repeat(7, minmax(0, 1fr));
+	gap: clamp(0.3rem, 1.5vw, 1rem);
+}
+
+.sbtb-cal-weekday {
+	font-size: clamp(0.55rem, 1.3vw, 0.9rem);
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--color-pink-purple);
+	opacity: 0.9;
+	font-family: 'Hedvig Letters Serif', serif;
+}
+
+.sbtb-cal-day {
+	font-family: 'Hedvig Letters Serif', serif;	
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: clamp(0.25rem, 0.8vw, 0.55rem);
+	padding: clamp(0.25rem, 1.6vw, 1rem) clamp(0.15rem, 0.7vw, 0.5rem);
+	border: 2px solid var(--accent, var(--color-pink-purple));
+	border-radius: 14px;
+	background-color: color-mix(in srgb, var(--color-whiteish) 82%, transparent);
+	backdrop-filter: blur(6px);
+	box-shadow: 4px 4px 0 var(--color-purple-darkest);
+	transition:
+		transform 200ms ease,
+		box-shadow 200ms ease;
+}
+
+.sbtb-cal-day:hover {
+	transform: translateY(-4px) rotate(-1.5deg);
+	box-shadow: 6px 8px 0 var(--color-purple-darkest);
+}
+
+/* washi tape */
+.sbtb-cal-tape {
+	position: absolute;
+	top: -7px;
+	left: 50%;
+	width: 42%;
+	height: 12px;
+	background-color: var(--accent, var(--color-pink-purple));
+	opacity: 0.65;
+	transform: translateX(-50%) rotate(-4deg);
+	clip-path: polygon(4% 0, 96% 6%, 100% 100%, 0 92%);
+	pointer-events: none;
+}
+
+/* fill is always a light tint so the dark date text stays readable on every accent */
+.sbtb-cal-date {
+	font-family: 'Hedvig Letters Serif', serif;	
+	display: grid;
+	place-items: center;
+	min-width: 1.7em;
+	padding: 0 0.35em;
+	border: 2px solid var(--accent, var(--color-pink-purple));
+	border-radius: 100px;
+	background-color: color-mix(in srgb, var(--accent, var(--color-pink-purple)) 32%, var(--color-whiteish));
+	color: var(--color-purple-darkest);
+	font-size: clamp(0.5rem, 1.4vw, 0.85rem);
+	line-height: 1.55;
+}
+
+.sbtb-cal-art {
+	display: grid;
+	place-items: center;
+	aspect-ratio: 1;
+	width: 100%;
+	animation: sbtb-pop-in 400ms both;
+	animation-delay: calc(var(--i, 0) * 25ms);
+}
+
+.sbtb-cal-sticker {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	filter: drop-shadow(2px 3px 0 color-mix(in srgb, var(--color-purple-darkest) 45%, transparent));
+}
+
+.sbtb-cal-day:nth-child(3n + 1) .sbtb-cal-art,
+.sbtb-cal-day:nth-child(3n + 2) .sbtb-cal-art {
+	rotate: -4deg;
+}
+.sbtb-cal-day:nth-child(3n + 2) .sbtb-cal-art {
+	rotate: 3.5deg;
+}
+.sbtb-cal-day:nth-child(3n + 3) .sbtb-cal-tape {
+	transform: translateX(-50%) rotate(6deg);
+}
+
+.sbtb-cal-word {
+	width: 100%;
+	font-size: clamp(0.62rem, 1.7vw, 1.05rem);
+	line-height: 1.15;
+	color: var(--color-purple-darkest);
+	overflow-wrap: anywhere;
+	hyphens: auto;
+	animation: sbtb-pop-in 400ms both;
+	animation-delay: calc(var(--i, 0) * 25ms);
+}
+
+/* locked: keeps the light card so the word stays readable, just a dashed muted edge */
+.sbtb-cal-day--locked {
+	border-style: dashed;
+	border-color: color-mix(in srgb, var(--accent, var(--color-pink-purple)) 50%, transparent);
+	box-shadow: 4px 4px 0 color-mix(in srgb, var(--color-purple-darkest) 45%, transparent);
+}
+
+/* the accent rides the border here, so the "?" is always dark-on-light */
+.sbtb-cal-mystery {
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 100%;
+	border: 2px dashed var(--accent, var(--color-pink-purple));
+	border-radius: 12px;
+	font-size: clamp(1rem, 3.5vw, 2rem);
+	color: var(--color-purple-darkest);
+	background-color: color-mix(in srgb, var(--color-whiteish) 65%, transparent);
+}
+
+/* unlocked, but this day's sticker hasn't been added yet */
+.sbtb-cal-empty {
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	background-color: color-mix(in srgb, var(--accent, var(--color-pink-purple)) 22%, transparent);
+}
+
+/* today gets a little star */
+.sbtb-cal-day--today {
+	box-shadow:
+		4px 4px 0 var(--color-purple-darkest),
+		0 0 0 3px var(--color-teal);
+}
+
+.sbtb-cal-day--today::after {
+	content: '★';
+	position: absolute;
+	top: -10px;
+	right: -4px;
+	font-size: clamp(0.7rem, 1.8vw, 1.1rem);
+	color: var(--color-yellow);
+	filter: drop-shadow(0 0 2px var(--color-whiteish))
+		drop-shadow(1px 1px 0 var(--color-purple-darkest));
+}
+
+@keyframes sbtb-pop-in {
+	from {
+		opacity: 0;
+		scale: 0.55;
+	}
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+@media (max-width: 768px) {
+	.sbtb-cal-day {
+		border-radius: 10px;
+		box-shadow: 3px 3px 0 var(--color-purple-darkest);
+	}
+
+	.sbtb-cal-day:hover {
+		transform: none;
+	}
+
+	.sbtb-cal-tape {
+		height: 8px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.sbtb-cal-art,
+	.sbtb-cal-word {
+		animation: none;
+	}
 }
 
 /* and we'll send you prizes */
