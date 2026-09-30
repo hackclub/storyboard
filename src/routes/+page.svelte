@@ -348,7 +348,7 @@
 					wait, what about <b>Storyboardtober</b>?
 				</h1>
 				<ul class="text-2xl leading-12 text-purple-dark">
-					d <li>1. choose your theme(s) from the calendar below...</li>
+					<li>1. choose your theme(s) from the calendar below...</li>
 					<li>
 						2. work on your visual novel for just 1 hour every day! (yes, you can work on it for
 						longer.)
