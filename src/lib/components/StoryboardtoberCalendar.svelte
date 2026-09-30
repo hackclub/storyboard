@@ -78,10 +78,8 @@
 	<header class="sbtb-cal-header">
 		<h3 class="sbtb-cal-title">{MONTH_LABEL} THEMES!</h3>
 		<p class="sbtb-cal-sub">
-			every day has a theme + a sticker! stickers pop out every day @ midnight 
-			<br> ✦ <b
-				>{revealedCount}/31</b
-			> out so far
+			every day has a theme + a sticker! stickers pop out every day @ midnight
+			<br /> ✦ <b>{revealedCount}/31</b> out so far
 		</p>
 	</header>
 
@@ -106,7 +104,6 @@
 					: 'sticker not revealed yet'}"
 			>
 				<span class="sbtb-cal-tape" aria-hidden="true"></span>
-				<span class="sbtb-cal-date">{entry.day}</span>
 
 				<div class="sbtb-cal-art">
 					{#if !revealed}
@@ -124,7 +121,10 @@
 					{/if}
 				</div>
 
-				<h4 class="sbtb-cal-word">{entry.word}</h4>
+				<div class="sbtb-cal-label">
+					<span class="sbtb-cal-date">{entry.day}</span>
+					<h4 class="sbtb-cal-word">{entry.word}</h4>
+				</div>
 			</article>
 		{/each}
 	</div>

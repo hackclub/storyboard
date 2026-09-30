@@ -155,7 +155,7 @@ li {
 	position: relative;
 	padding: 1.2rem;
 	margin-top: 3rem;
-	
+
 	border: 2px solid var(--color-whiteish);
 	background-color: color-mix(in srgb, var(--color-whiteish) 70%, transparent);
 	backdrop-filter: blur(8px);
@@ -193,7 +193,7 @@ li {
 
 .sbtb-cal-header {
 	margin-bottom: 1.5rem;
-	font-family: 'Hedvig Letters Serif', serif;	
+	font-family: 'Hedvig Letters Serif', serif;
 }
 
 .sbtb-cal-title {
@@ -227,11 +227,12 @@ li {
 }
 
 .sbtb-cal-day {
-	font-family: 'Hedvig Letters Serif', serif;	
+	font-family: 'Hedvig Letters Serif', serif;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	gap: clamp(0.25rem, 0.8vw, 0.55rem);
 	padding: clamp(0.25rem, 1.6vw, 1rem) clamp(0.15rem, 0.7vw, 0.5rem);
 	border: 2px solid var(--accent, var(--color-pink-purple));
@@ -265,17 +266,31 @@ li {
 
 /* fill is always a light tint so the dark date text stays readable on every accent */
 .sbtb-cal-date {
-	font-family: 'Hedvig Letters Serif', serif;	
+	font-family: 'Hedvig Letters Serif', serif;
 	display: grid;
 	place-items: center;
 	min-width: 1.7em;
 	padding: 0 0.35em;
 	border: 2px solid var(--accent, var(--color-pink-purple));
 	border-radius: 100px;
-	background-color: color-mix(in srgb, var(--accent, var(--color-pink-purple)) 32%, var(--color-whiteish));
+	background-color: color-mix(
+		in srgb,
+		var(--accent, var(--color-pink-purple)) 32%,
+		var(--color-whiteish)
+	);
 	color: var(--color-purple-darkest);
-	font-size: clamp(0.5rem, 1.4vw, 0.85rem);
+	font-size: clamp(0.5rem, 1.4vw, 0.95rem);
 	line-height: 1.55;
+}
+
+/* date + word, stacked on mobile, side-by-side beside the art on desktop */
+.sbtb-cal-label {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.15rem;
+	width: 100%;
+	min-width: 0;
 }
 
 .sbtb-cal-art {
@@ -283,13 +298,15 @@ li {
 	place-items: center;
 	aspect-ratio: 1;
 	width: 100%;
+	max-width: 100%;
+	height: 300%;
 	animation: sbtb-pop-in 400ms both;
 	animation-delay: calc(var(--i, 0) * 25ms);
 }
 
 .sbtb-cal-sticker {
 	width: 100%;
-	height: 100%;
+	height: 400%;
 	object-fit: contain;
 	filter: drop-shadow(2px 3px 0 color-mix(in srgb, var(--color-purple-darkest) 45%, transparent));
 }
@@ -307,8 +324,8 @@ li {
 
 .sbtb-cal-word {
 	width: 100%;
-	font-size: clamp(0.62rem, 1.7vw, 1.05rem);
-	line-height: 1.15;
+	font-size: clamp(0.62rem, 1.7vw, 1.2rem);
+	line-height: 1.25;
 	color: var(--color-purple-darkest);
 	overflow-wrap: anywhere;
 	hyphens: auto;
@@ -331,7 +348,7 @@ li {
 	height: 100%;
 	border: 2px dashed var(--accent, var(--color-pink-purple));
 	border-radius: 12px;
-	font-size: clamp(1rem, 3.5vw, 2rem);
+	font-size: clamp(1rem, 3.5vw, 2.25rem);
 	color: var(--color-purple-darkest);
 	background-color: color-mix(in srgb, var(--color-whiteish) 65%, transparent);
 }
@@ -370,6 +387,49 @@ li {
 	to {
 		opacity: 1;
 		scale: 1;
+	}
+}
+
+@media (min-width: 769px) {
+	/* landscape cards: sticker stacked on top, label underneath, wide short sticker band */
+	.sbtb-cal-day {
+		aspect-ratio: 2 / 1;
+		padding: clamp(0.3rem, 0.8vw, 0.55rem);
+		gap: clamp(0.15rem, 0.5vw, 0.35rem);
+	}
+
+	.sbtb-cal-art {
+		position: relative;
+		aspect-ratio: 2 / 1;
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+
+	.sbtb-cal-sticker {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
+	}
+
+	.sbtb-cal-mystery {
+		aspect-ratio: 2 / 1;
+		width: 100%;
+		height: 100%;
+		font-size: clamp(0.55rem, 1.5vw, 1.35rem);
+	}
+
+	.sbtb-cal-label {
+		align-items: center;
+		flex: 0 0 auto;
+		width: 100%;
+		flex-direction: row;
+		justify-content: center;
+		gap: clamp(0.25rem, 0.8vw, 0.5rem);
 	}
 }
 
@@ -441,7 +501,7 @@ li {
 	text-align: center;
 	transform: perspective(1200px) rotateX(2deg) rotateY(20deg);
 	box-shadow: #534784d8 10px 10px 10px;
-	
+
 	transition: transform 200ms ease;
 	outline: 2px solid var(--color-purple-darkest);
 	overflow: hidden;

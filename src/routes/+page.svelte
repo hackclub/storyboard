@@ -226,17 +226,18 @@
 			make a visual novel, get cool prizes!
 		</h1>
 		<h1 class="text-glow text-center text-xl text-yellow md:text-3xl">
-			<b>Storyboardtober is currently running!</b> make a visual novel in 1 month, and get prizes EVERY DAY.
-		</h1>		
+			<b>Storyboardtober is currently running!</b> make a visual novel in 1 month, and get prizes EVERY
+			DAY.
+		</h1>
 		<div class="m-6 flex w-full flex-col items-center justify-center gap-4 md:w-1/2 md:flex-row">
 			<a
-				class="bg-teal  hover:bg-whiteish hover:scale-105 duration-200 w-4/5 rounded-4xl p-4 text-2xl outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
+				class="w-4/5 rounded-4xl bg-teal p-4 text-2xl outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest duration-200 hover:scale-105 hover:bg-whiteish hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
 				href="#how"
 			>
 				GET STARTED
-		</a>
+			</a>
 			<a
-				class="bg-pink-purple hover:bg-whiteish hover:scale-105 duration-200 w-4/5 rounded-4xl p-4 text-2xl outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
+				class="w-4/5 rounded-4xl bg-pink-purple p-4 text-2xl outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest duration-200 hover:scale-105 hover:bg-whiteish hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
 				href="/placeholder"
 			>
 				SUBMIT!
@@ -343,20 +344,20 @@
 				</div>
 			</div>
 			<div class="sbtb-box">
-				<h1 class="text-3xl text-purple-darkest m-6 underline">wait, what about <b>Storyboardtober</b>?</h1>
+				<h1 class="m-6 text-3xl text-purple-darkest underline">
+					wait, what about <b>Storyboardtober</b>?
+				</h1>
 				<ul class="text-2xl leading-12 text-purple-dark">
-			d		<li>1. choose your theme(s) from the calendar below...</li>
+					d <li>1. choose your theme(s) from the calendar below...</li>
 					<li>
-						2. work on your visual novel for just 1 hour every day! (yes, you can work on it for longer.)
+						2. work on your visual novel for just 1 hour every day! (yes, you can work on it for
+						longer.)
 					</li>
+					<li>3. get a unique sticker for every day that you work on your project!</li>
+					<li>4. get a bigger prize at the end!!!</li>
 					<li>
-						3. get a unique sticker for every day that you work on your project!
+						5. you'll have YOUR OWN visual novel, a bunch of stickers & and an awesome prize :D
 					</li>
-					<li>
-						4. get a bigger prize at the end!!!
-					</li>
-					<li>
-						5. you'll have YOUR OWN visual novel, a bunch of stickers & and an awesome prize :D</li>
 				</ul>
 			</div>
 			<StoryboardtoberCalendar />
@@ -532,13 +533,17 @@
 	<!-- faq -->
 	<div class="mb-12 flex w-full flex-col gap-4" id="FAQ">
 		<h1 class="examples-text-gradient-blue m-4 text-4xl"><b>FAQ</b></h1>
-		{#each faqs as faq}
-			<details class="faq-item">
-				<summary>{faq.question}</summary>
-				<p class="faq-answer">{faq.answer}</p>
-			</details>
-		{/each}
-		<!-- (add embed w renpy game sometime) -->
+		<iframe
+			frameborder="0"
+			src="https://itch.io/embed-upload/19478916?color=e8e9f7"
+			class="mx-auto"
+			title="storyboard-faq-game"
+			width="1280"
+			height="740"
+			><a href="https://ikealoverkat.itch.io/storyboard-faq-game"
+				>Play storyboard-faq-game on itch.io</a
+			></iframe
+		>
 		<h2 class="m-8 text-xl leading-loose">
 			More questions? ask in <a
 				href="https://hackclub.enterprise.slack.com/archives/C09JZLBKS65"

@@ -26,7 +26,7 @@ export const CALENDAR_MONTH = 10;
 export const MONTH_LABEL = 'October';
 
 /** Days 1-5 ship already revealed so the calendar isn't empty on launch. */
-export const PREREVEALED_THROUGH = 5;
+export const PREREVEALED_THROUGH = 4;
 
 export interface StoryboardtoberDay {
 	/** Day of October, 1-31. */
@@ -39,10 +39,10 @@ export interface StoryboardtoberDay {
 
 export const storyboardtober: StoryboardtoberDay[] = [
 	// days 1-5 ship already revealed, so they need a real image right away
-	{ day: 1, word: 'Apple', image: '/cat.png' },
-	{ day: 2, word: 'Relic', image: '/cat.png' },
-	{ day: 3, word: 'Miniature', image: '/cat.png' },
-	{ day: 4, word: 'Cactus', image: '/cat.png' },
+	{ day: 1, word: 'Apple', image: '/theme-stickers/apple.png' },
+	{ day: 2, word: 'Relic', image: '/theme-stickers/relic.png' },
+	{ day: 3, word: 'Miniature', image: '/theme-stickers/miniature.png' },
+	{ day: 4, word: 'Cactus', image: '/theme-stickers/cactus.png' },
 	{ day: 5, word: 'Smack', image: '/cat.png' },
 	{ day: 6, word: 'Ogre', image: null },
 	{ day: 7, word: 'Panic', image: null },
