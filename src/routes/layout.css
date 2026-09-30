@@ -176,6 +176,12 @@ li {
 	pointer-events: none;
 }
 
+.sbtb-box.yellow {
+	border-color: var(--color-yellow);
+	background-color: color-mix(in srgb, var(--color-yellow) 70%, transparent);
+}
+
+
 /* storyboardtober calendar */
 
 .sbtb-calendar {

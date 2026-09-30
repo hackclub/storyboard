@@ -37,77 +37,53 @@
 
 	const prizes: Prize[] = [
 		{
+			title: 'Stickers',
+			hours: 'free',
+			description: 'limited edition for storyboardtober participants!',
+			src: '/theme-stickers/apple.png'
+		},
+		{
 			title: 'Steam Dev License',
 			hours: '30 hours',
-			description: 'upload your game to steam!!! get big money?',
-			src: '/prizes/steamlicense.jpg'
+			description: 'we\'ll cover the steam direct fee to publish your game!!!',
+			src: '/prizes/steamlicense.webp'
 		},
 		{
-			title: 'Hoodie? 👀👀👀👀👀',
-			hours: '15 hours',
-			description: 'sparkly shiny and theres a funny cat too',
-			src: '/prizes/hoodie.png'
-		},
-		{
-			title: 'Drawing Tablet',
-			hours: '50 hours',
+			title: 'Drawing Tablet (Screenless)',
+			hours: '40 hours',
 			description: 'draw a visual novel & get a drawing tablet to... draw more visual novels',
+			src: '/prizes/xppen-deco.webp'
+		},
+		{
+			title: 'Drawing Tablet (Screen!)',
+			hours: '50 hours',
+			description: '(requires Hackatime and Lapse tracking) this one has a fancy screen!',
 			src: '/prizes/drawingtablet.webp'
 		},
 		{
 			title: 'Fat Cat Plushie',
-			hours: '15 hours',
+			hours: '10 hours',
 			description: 'SOO CUTE',
-			src: '/prizes/plushie.jpg'
+			src: '/prizes/fatcat.webp'
 		},
 		{
-			title: 'Stickers',
-			hours: '1 hour',
-			description: 'cool stickers drawn by the supercoolawesome storyboard team!',
-			src: '/prizes/stickersheet.png'
-		},
-		{
-			title: 'Keyboard',
+			title: 'Keyboard or Headphones',
 			hours: '20 hours',
 			description: 'click click clack clack',
 			src: '/prizes/keyboard.webp'
 		},
 		{
-			title: 'Steam Dev License',
-			hours: '30 hours',
-			description: 'upload your game to steam!!! get big money?',
-			src: '/prizes/steamlicense.jpg'
+			title: 'Big IKEA Plushie',
+			hours: '10 hours',
+			description: 'huge stuffed animal for your room',
+			src: '/prizes/blahaj.webp'
 		},
 		{
-			title: 'Hoodie? 👀👀👀👀👀',
-			hours: '15 hours',
-			description: 'sparkly shiny and theres a funny cat too',
-			src: '/prizes/hoodie.png'
+			title: 'Miffy Digicam',
+			hours: '25 hours',
+			description: 'or another digicam of your choice',
+			src: '/prizes/martube-miffy-digicam.webp'
 		},
-		{
-			title: 'Drawing Tablet',
-			hours: '50 hours',
-			description: 'draw a visual novel & get a drawing tablet to... draw more visual novels',
-			src: '/prizes/drawingtablet.webp'
-		},
-		{
-			title: 'Fat Cat Plushie',
-			hours: '15 hours',
-			description: 'SOO CUTE',
-			src: '/prizes/plushie.jpg'
-		},
-		{
-			title: 'Stickers',
-			hours: '1 hour',
-			description: 'cool stickers drawn by the supercoolawesome storyboard team!',
-			src: '/prizes/stickersheet.png'
-		},
-		{
-			title: 'Keyboard',
-			hours: '20 hours',
-			description: 'click click clack clack',
-			src: '/prizes/keyboard.webp'
-		}
 	];
 
 	const prizeColors = [
@@ -225,7 +201,7 @@
 		<h1 class="text-glow text-center text-2xl text-teal md:text-3xl">
 			make a visual novel, get cool prizes!
 		</h1>
-		<h1 class="text-glow text-center text-xl text-yellow md:text-3xl">
+		<h1 class="text-glow text-center text-xl text-yellow md:text-2xl">
 			<b>Storyboardtober is currently running!</b> make a visual novel in 1 month, and get prizes EVERY
 			DAY.
 		</h1>
@@ -343,11 +319,14 @@
 					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_prize.png" />
 				</div>
 			</div>
-			<div class="sbtb-box">
-				<h1 class="m-6 text-3xl text-purple-darkest underline">
-					wait, what about <b>Storyboardtober</b>?
+
+			<h2 class="prizes-text m-4 text-2xl text-white" id="prizes">...and we'll send you prizes!</h2>
+
+			<div class="sbtb-box yellow mx-4!">
+				<h1 class="mx-6 text-3xl text-purple-darkest underline">
+					how to get free stickers for <b>Storyboardtober</b>
 				</h1>
-				<ul class="text-2xl leading-12 text-purple-dark">
+				<ul class="text-xl leading-12 text-purple-dark">
 					<li>1. choose your theme(s) from the calendar below...</li>
 					<li>
 						2. work on your visual novel for just 1 hour every day! (yes, you can work on it for
@@ -363,7 +342,6 @@
 			<StoryboardtoberCalendar />
 		</div>
 
-		<h2 class="prizes-text m-4 text-2xl text-white" id="prizes">...and we'll send you prizes!</h2>
 		<!-- scrolling prizes  -->
 		<!-- <div
 			class="prize-scroll"
@@ -417,17 +395,17 @@
 				<div class="grid grid-cols-4 grid-rows-4 place-items-center gap-4 space-y-8">
 					{#each prizes as prize, i}
 						<div
-							class="prize-card flex flex-col items-center justify-between p-6 text-center"
+							class="prize-card flex flex-col items-center justify-between p-6 text-center lg:aspect-[3/5]!"
 							style="background-color: {prizeColors[i % prizeColors.length]
 								.bg}; color: {prizeColors[i % prizeColors.length].text}"
 						>
 							<h1 class="mt-4 text-2xl underline">{prize.title}</h1>
 							<p class="mt-4 text-base">{prize.description}</p>
-							<!-- <img
+							<img
 								src={prize.src}
 								alt={prize.title}
 								class="m-4 min-h-0 w-full flex-1 rounded-sm object-contain"
-							/> -->
+							/>
 							<p class="dark mt-auto rounded-xs text-lg">{prize.hours}</p>
 						</div>
 					{/each}
