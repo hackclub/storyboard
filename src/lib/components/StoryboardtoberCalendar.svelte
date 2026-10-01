@@ -76,7 +76,8 @@
 
 <section class="sbtb-calendar" aria-label="{MONTH_LABEL} {CALENDAR_YEAR} theme calendar">
 	<header class="sbtb-cal-header">
-		<h3 class="sbtb-cal-title">{MONTH_LABEL} THEMES!</h3>
+		<!-- <h3 class="sbtb-cal-title">{MONTH_LABEL} THEMES!</h3> -->
+		<h3 class="sbtb-cal-title">Storyboardtober THEMES!</h3>
 		<p class="sbtb-cal-sub">
 			every day has a theme + a sticker! stickers pop out every day @ midnight
 			<br /> ✦ <b>{revealedCount}/31</b> out so far

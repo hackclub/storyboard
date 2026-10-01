@@ -179,6 +179,7 @@ li {
 .sbtb-box.yellow {
 	border-color: var(--color-yellow);
 	background-color: color-mix(in srgb, var(--color-yellow) 70%, transparent);
+	padding: 1.2rem;
 }
 
 

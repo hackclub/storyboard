@@ -251,7 +251,7 @@
 							href="https://slack.hackclub.com"
 							class="text-purple-mid underline hover:decoration-wavy">Hack Club Slack</a
 						>!
-						Next, join the official <a href="https://slack.hackclub.com" class="text-purple-mid underline hover:decoration-wavy">#storyboard channel</a> (it's like Discord) and create a post for your project.
+						Next, join the official <a href="https://slack.hackclub.com" class="text-purple-mid underline hover:decoration-wavy">#storyboard channel</a> (it's like Discord) and create a post thread for your project.
 					</p>
 					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_signup.png" />
 				</div>
@@ -289,16 +289,17 @@
 						>. Check out our
 						<a href="/placeholder" class="text-purple-mid underline hover:decoration-wavy"
 							>guides!</a
-						>
+						> And don't forget to post your progress - read the canvas titled <a href="https://hackclub.enterprise.slack.com/docs/T0266FRGM/F09616RN3AL" class="text-purple-mid underline hover:decoration-wavy">[IMPORTANT INFO] OVERVIEW</a> in the #storyboard channel!
 					</p>
 					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_code.png" />
 				</div>
 				<div class="how-container">
 					<div class="flex flex-row items-center justify-start gap-6">
 						<div class="how-number bg-pink-purple">5</div>
-						<h1 class="text-3xl text-purple-darkest">publish to itch.io</h1>
+						<h1 class="text-3xl text-purple-darkest">publish to github + x	itch.io</h1>
 					</div>
 					<p class="mt-2 leading-5 text-purple-darkest">
+						While you're coding, make a GitHub repository for your game and commit frequently (guide on how to do that <a href="https://docs.github.com/en/get-started/quickstart" target="_blank" class="text-purple-mid underline hover:decoration-wavy">here</a>).
 						Upload your game to <a
 							href="https://itch.io"
 							target="_blank"
@@ -323,21 +324,21 @@
 			<h2 class="prizes-text m-4 text-2xl text-white" id="prizes">...and we'll send you prizes!</h2>
 
 			<div class="sbtb-box yellow mx-4!">
-				<h1 class="mx-6 text-3xl text-purple-darkest underline">
+				<h1 class="mx-6 text-2xl md:text-3xl text-purple-darkest underline mb-4">
 					how to get free stickers for <b>Storyboardtober</b>
 				</h1>
-				<ul class="text-xl leading-12 text-purple-dark">
-					<li>1. choose your theme(s) from the calendar below...</li>
+				<ol class="text-lg md:text-xl leading-10 text-purple-dark list-decimal text-left px-4">
+					<li>work on your visual novel for just 1 hour every day! (yes, you can work on it for
+						longer.)</li>
 					<li>
-						2. work on your visual novel for just 1 hour every day! (yes, you can work on it for
-						longer.)
+						incorporate the theme of the day into your visual novel somehow :0
 					</li>
-					<li>3. get a unique sticker for every day that you work on your project!</li>
-					<li>4. get a bigger prize at the end!!!</li>
+					<li>get a unique sticker for every day that you work on your project!</li>
+					<li>get a bigger prize at the end!!!</li>
 					<li>
-						5. you'll have YOUR OWN visual novel, a bunch of stickers & and an awesome prize :D
+						you'll have YOUR OWN visual novel, a bunch of stickers & and an awesome prize :D
 					</li>
-				</ul>
+				</ol>
 			</div>
 			<StoryboardtoberCalendar />
 		</div>
@@ -391,8 +392,8 @@
 			</div>
 		</div> -->
 		<div>
-			<div class="">
-				<div class="grid grid-cols-4 grid-rows-4 place-items-center gap-4 space-y-8">
+			<div class="mt-16">
+				<div class="grid grid-cols-4 place-items-center gap-x-4 gap-y-8">
 					{#each prizes as prize, i}
 						<div
 							class="prize-card flex flex-col items-center justify-between p-6 text-center lg:aspect-[3/5]!"
@@ -414,7 +415,7 @@
 		</div>
 		<!-- guides -->
 		<div class="guides flex w-full flex-col items-center justify-center gap-4 text-center">
-			<h2 class="text-glow text-2xl text-white"><b>we have step-by-step guides to help:</b></h2>
+			<h2 id="guides-home" class="mt-16 text-glow text-2xl text-white"><b>we have step-by-step guides to help:</b></h2>
 			<div
 				class="guides-grid m-6 grid w-full grid-cols-1 md:w-3/4 md:grid-cols-2 lg:w-2/3 xl:w-1/2"
 			>
