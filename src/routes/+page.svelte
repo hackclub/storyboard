@@ -207,14 +207,14 @@
 		</h1>
 		<div class="m-6 flex w-full flex-col items-center justify-center gap-4 md:w-1/2 md:flex-row">
 			<a
-				class="w-4/5 rounded-4xl bg-teal p-4 text-2xl outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest duration-200 hover:scale-105 hover:bg-whiteish hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
+				class="w-4/5 rounded-4xl bg-teal p-4 text-2xl text-center outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest duration-200 hover:scale-105 hover:bg-whiteish hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
 				href="#how"
 			>
 				GET STARTED
 			</a>
 			<a
-				class="w-4/5 rounded-4xl bg-pink-purple p-4 text-2xl outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest duration-200 hover:scale-105 hover:bg-whiteish hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
-				href="/placeholder"
+				class="w-4/5 rounded-4xl bg-pink-purple p-4 text-2xl text-center outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest duration-200 hover:scale-105 hover:bg-whiteish hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
+				href="https://forms.hackclub.com/storyboard-submit"
 			>
 				SUBMIT!
 			</a>
@@ -246,11 +246,12 @@
 						<h1 class="text-3xl text-purple-darkest">sign up!</h1>
 					</div>
 					<p class="mt-2 leading-5 text-purple-darkest">
-						sign up w/email & make sure to join the
+						Join the
 						<a
 							href="https://slack.hackclub.com"
-							class="text-purple-mid underline hover:decoration-wavy">hack club slack!</a
-						>
+							class="text-purple-mid underline hover:decoration-wavy">Hack Club Slack</a
+						>!
+						Next, join the official <a href="https://slack.hackclub.com" class="text-purple-mid underline hover:decoration-wavy">#storyboard channel</a> (it's like Discord) and create a post for your project.
 					</p>
 					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_signup.png" />
 				</div>
@@ -260,8 +261,8 @@
 						<h1 class="text-3xl text-purple-darkest">write a story</h1>
 					</div>
 					<p class="mt-2 leading-5 text-purple-darkest">
-						think of a project idea & write up characters, dialogue, and try to include lots of
-						interactive options.
+						Think of a project idea & write up your plot, characters, and dialogue. Try to include lots of
+						interactive options too :)
 					</p>
 					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_write.png" />
 				</div>
@@ -271,7 +272,7 @@
 						<h1 class="text-3xl text-purple-darkest">draw</h1>
 					</div>
 					<p class="mt-2 leading-5 text-purple-darkest">
-						draw up sprites, backgrounds, logos, and other assets for your game!
+						Draw up sprites, backgrounds, logos, and other assets for your game!
 					</p>
 					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_draw.png" />
 				</div>
@@ -281,7 +282,7 @@
 						<h1 class="text-3xl text-purple-darkest">code</h1>
 					</div>
 					<p class="mt-2 leading-5 text-purple-darkest">
-						First ever coding project? We reccomend using <a
+						First time coding? We reccomend using <a
 							href="https://www.renpy.org/"
 							target="_blank"
 							class="text-purple-mid underline hover:decoration-wavy">Ren'Py</a
@@ -289,7 +290,6 @@
 						<a href="/placeholder" class="text-purple-mid underline hover:decoration-wavy"
 							>guides!</a
 						>
-						You can use whatever you want, though!
 					</p>
 					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_code.png" />
 				</div>
@@ -299,7 +299,7 @@
 						<h1 class="text-3xl text-purple-darkest">publish to itch.io</h1>
 					</div>
 					<p class="mt-2 leading-5 text-purple-darkest">
-						upload your game to <a
+						Upload your game to <a
 							href="https://itch.io"
 							target="_blank"
 							class="text-purple-mid underline hover:decoration-wavy">itch.io</a
