@@ -201,7 +201,7 @@
 		<h1 class="text-glow text-center text-2xl text-teal md:text-3xl">
 			make a visual novel, get cool prizes!
 		</h1>
-		<h1 class="text-glow text-center text-xl text-yellow md:text-2xl">
+		<h1 class="max-w-2xl text-glow text-center text-xl text-yellow md:text-2xl">
 			<b>Storyboardtober is currently running!</b> make a visual novel in 1 month, and get prizes EVERY
 			DAY.
 		</h1>
@@ -239,7 +239,7 @@
 		<div class="flex flex-col items-center justify-center gap-4" id="how">
 			<h1 class=" text-glow mt-16 text-4xl text-whiteish">HOW DOES STORYBOARD WORK?</h1>
 			<h2 class="text-glow m-4 text-2xl text-teal">learn how to make a visual novel...</h2>
-			<div class="grid w-full grid-cols-1 md:w-2/3 md:grid-cols-3 md:grid-rows-2">
+			<div class="grid w-full max-w-[95%] grid-cols-1 md:w-full xl:max-w-[80%] md:grid-cols-3 md:grid-rows-2">
 				<div class="how-container">
 					<div class="flex flex-row items-center justify-start gap-6">
 						<div class="how-number bg-magenta">1</div>
@@ -394,10 +394,10 @@
 		</div> -->
 		<div>
 			<div class="mt-16">
-				<div class="grid grid-cols-4 place-items-center gap-x-4 gap-y-8">
+				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-4  md:gap-y-8">
 					{#each prizes as prize, i}
 						<div
-							class="prize-card flex flex-col items-center justify-between p-6 text-center lg:aspect-[3/5]!"
+							class="w-full prize-card flex flex-col items-center justify-between p-6 text-center lg:aspect-3/5"
 							style="background-color: {prizeColors[i % prizeColors.length]
 								.bg}; color: {prizeColors[i % prizeColors.length].text}"
 						>
@@ -516,10 +516,10 @@
 		<iframe
 			frameborder="0"
 			src="https://itch.io/embed-upload/19478916?color=e8e9f7"
-			class="mx-auto"
+			class="mx-auto aspect-video"
 			title="storyboard-faq-game"
-			width="1280"
-			height="740"
+			width="100%"
+			height="auto"
 			><a href="https://ikealoverkat.itch.io/storyboard-faq-game"
 				>Play storyboard-faq-game on itch.io</a
 			></iframe
