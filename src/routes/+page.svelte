@@ -38,49 +38,49 @@
 	const prizes: Prize[] = [
 		{
 			title: 'Stickers',
-			hours: 'free',
+			hours: 'free!',
 			description: 'limited edition for storyboardtober participants!',
 			src: '/theme-stickers/apple.png'
 		},
 		{
 			title: 'Steam Dev License',
-			hours: '30 hours',
+			hours: 'TIER 1',
 			description: 'we\'ll cover the steam direct fee to publish your game!!!',
 			src: '/prizes/steamlicense.webp'
 		},
 		{
 			title: 'Drawing Tablet (Screenless)',
-			hours: '40 hours',
+			hours: 'TIER 3',
 			description: 'draw a visual novel & get a drawing tablet to... draw more visual novels',
 			src: '/prizes/xppen-deco.webp'
 		},
 		{
 			title: 'Drawing Tablet (Screen!)',
-			hours: '50 hours',
+			hours: 'TIER 4',
 			description: '(requires Hackatime and Lapse tracking) this one has a fancy screen!',
 			src: '/prizes/drawingtablet.webp'
 		},
 		{
 			title: 'Fat Cat Plushie',
-			hours: '10 hours',
+			hours: 'TIER 1',
 			description: 'SOO CUTE',
 			src: '/prizes/fatcat.webp'
 		},
 		{
 			title: 'Keyboard or Headphones',
-			hours: '20 hours',
+			hours: 'TIER 2',
 			description: 'click click clack clack',
 			src: '/prizes/keyboard.webp'
 		},
 		{
 			title: 'Big IKEA Plushie',
-			hours: '10 hours',
+			hours: 'TIER 1',
 			description: 'huge stuffed animal for your room',
 			src: '/prizes/blahaj.webp'
 		},
 		{
 			title: 'Miffy Digicam',
-			hours: '25 hours',
+			hours: 'TIER 2',
 			description: 'or another digicam of your choice',
 			src: '/prizes/martube-miffy-digicam.webp'
 		},
