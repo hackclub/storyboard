@@ -333,6 +333,7 @@
 					<li>
 						incorporate the theme of the day into your visual novel somehow :0
 					</li>
+					<li>post what you did in your #storyboard message thread!</li>
 					<li>get a unique sticker for every day that you work on your project!</li>
 					<li>get a bigger prize at the end!!!</li>
 					<li>
