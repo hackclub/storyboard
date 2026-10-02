@@ -32,7 +32,22 @@
 			name: 'yunfei shuai',
 			src: '/pfp_yunfei.png',
 			link: 'https://small-n-stupid.vercel.app/'
-		}
+		},
+		{
+			name: 'susan zheng',
+			src: '/pfp_susan.HEIC',
+			link: 'https://github.com/uselesslyuseful'
+		},
+		{
+			name: 'sophia duan',
+			src: '/cat.png',
+			link: 'https://sophiaduan.dev'
+		},
+		{
+			name: 'herby',
+			src: '/pfp_herby.png',
+			link: 'https://herbeon.github.io/links/'
+		}				
 	];
 
 	const prizes: Prize[] = [
@@ -421,7 +436,7 @@
 				class="guides-grid m-6 grid w-full grid-cols-1 md:w-3/4 md:grid-cols-2 lg:w-2/3 xl:w-1/2"
 			>
 				<a
-					href="https://docs.google.com/document/d/1tfEr_6A3tlXod_1El_F757lU6MpuZNft8vFeGw0q808/edit?usp=sharing"
+					href="/placeholder"
 					class="guide-container"
 				>
 					<img src="/cat.png" alt="" class="h-20 w-25" />
