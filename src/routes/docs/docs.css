@@ -1,15 +1,12 @@
-/* Documentation styling. Imported only by the /docs layout, so it stays out of
-   the rest of the site's CSS bundle. Colours come from the theme tokens declared
-   in src/routes/layout.css. */
-
 .docs-shell {
 	display: flex;
 	min-height: 100vh;
 	width: 100%;
-	background-color: var(--color-purple-darkest);
+	background-image: url('/bg-window.png');
+	background-color: rgba(48, 40, 101, 0.85);
+	background-blend-mode: darken;
 	color: var(--color-whiteish);
 }
-
 /* ---------- sidebar ---------- */
 
 .docs-sidebar {
@@ -359,6 +356,7 @@
 	margin: 1.25rem 0;
 	border-collapse: collapse;
 	font-size: 0.95rem;
+	font-family: 'Hedvig Letters Serif';
 }
 
 .docs-prose th,
@@ -473,10 +471,13 @@
 @media (min-width: 900px) {
 	.docs-sidebar {
 		position: sticky;
-		top: 0;
 		inset: auto;
+		top: 0;
+		align-self: flex-start;
 		transform: none;
 		width: 18rem;
+		height: 100vh;
+		height: 100dvh;
 		flex: 0 0 18rem;
 	}
 

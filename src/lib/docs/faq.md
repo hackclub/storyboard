@@ -1,30 +1,24 @@
 ---
 title: FAQ
-description: Answers to the questions we get asked most.
+description: Have a question about Storyboard? Look here!
 order: 6
 category: Reference
 ---
 
 # Frequently Asked Questions
 
-## Do I need to know how to code?
+play this awesome FAQ visual novel by [@hherby](https://herbeon.github.io/links/) and [@kat](https://kat.wang) :D 
+<iframe
+			frameborder="0"
+			src="https://itch.io/embed-upload/19478916?color=e8e9f7"
+			class="mx-auto aspect-video"
+			title="storyboard-faq-game"
+			width="100%"
+			height="auto"
+			><a href="https://ikealoverkat.itch.io/storyboard-faq-game"
+				>Play storyboard-faq-game on itch.io</a
+			></iframe
+		>
 
-No. Ren'Py handles the engine; you write a story. That said, a little scripting goes a long way, and the [writing guide](/docs/writing-your-story) walks you through the basics.
 
-## Can I work in a team?
-
-Yes. Teams are welcome, as long as hours are split fairly between members and each person can show their contribution. Everyone on the team must be 13–18.
-
-## What if I don't finish?
-
-Submit what you have. A finished vertical slice — one polished scene — is worth far more than an unfinished epic, and you still keep the hours you logged.
-
-## Which tools should I use?
-
-Use whatever you're comfortable with. Ren'Py is the most common choice and has the most tutorials, but Twine, Godot, and custom engines are all welcome.
-
-## How do I get help?
-
-Join the `#storyboard` channel on the [Hack Club Slack](https://slack.hackclub.com). Post what you're stuck on, share a screenshot, and someone will jump in.
-
-> Still stuck? Check the [guides](/docs/getting-started) before asking — the answer is often already written down.
+> Still stuck? ask in [#storyboard-help](https://hackclub.enterprise.slack.com/archives/C09JZLBKS65) on Slack or email storyboard@hackclub.com!

@@ -24,7 +24,7 @@
 		aria-label="Documentation navigation"
 	>
 		<a class="docs-brand" href="/">
-			<img src="/hc-flag.png" alt="" />
+			<img src="/cat.png" alt="" />
 			<b>storyboard docs</b>
 		</a>
 		<DocsSidebar onNavigate={() => (open = false)} />

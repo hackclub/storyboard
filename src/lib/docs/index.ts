@@ -20,8 +20,7 @@ export interface Doc {
 	component: Component;
 }
 
-/** Preference order for known categories; unknown ones fall in after, alphabetically. */
-const CATEGORY_ORDER = ['Getting Started', 'Guides', 'Reference'];
+const CATEGORY_ORDER = ['Quickstart', 'Guides', 'Resources', 'Reference'];
 
 // Every `.md` file under this directory becomes a page. Files prefixed with an
 // underscore are treated as partials and skipped so they never show in the nav.
