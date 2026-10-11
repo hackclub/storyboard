@@ -23,9 +23,12 @@
 		class:is-open={open}
 		aria-label="Documentation navigation"
 	>
+		<a href="https://hackclub.com" target="_blank">
+			<img src="/hc-flag.png" alt="hackclub flag" class="absolute top-3 left-6 w-12" />
+		</a>
 		<a class="docs-brand" href="/">
 			<img src="/cat.png" alt="" />
-			<b>storyboard docs</b>
+			<b>Storyboard Docs</b>
 		</a>
 		<DocsSidebar onNavigate={() => (open = false)} />
 	</aside>

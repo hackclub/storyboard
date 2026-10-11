@@ -16,7 +16,7 @@
 	</header>
 
 	<article class="docs-prose">
-		<p>New here? Start with the <a href="/docs/getting-started">Getting Started</a> guide.</p>
+		<p>New here? Start with the <a href="/docs/quickstart">Quickstart</a> guide.</p>
 	</article>
 
 	{#each navGroups as group (group.category)}

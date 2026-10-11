@@ -39,6 +39,10 @@
 	text-decoration: none;
 }
 
+.docs-brand:hover {
+	text-decoration: underline wavy;
+}
+
 .docs-brand img {
 	width: 1.9rem;
 	height: 1.9rem;
@@ -444,7 +448,7 @@
 	display: block;
 	padding: 1.1rem 1.2rem;
 	border: 2px solid color-mix(in srgb, var(--color-pink-purple) 35%, transparent);
-	border-radius: 0.9rem;
+	border-radius: 0.6rem;
 	background-color: color-mix(in srgb, var(--color-whiteish) 6%, transparent);
 	text-decoration: none;
 	transition:
@@ -455,6 +459,7 @@
 .docs-card:hover {
 	transform: translateY(-3px);
 	border-color: var(--color-teal);
+	background-color: color-mix(in srgb, var(--color-teal) 15%, transparent);
 }
 
 .docs-card h3 {
