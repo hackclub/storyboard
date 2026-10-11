@@ -11,12 +11,6 @@
 		answer: string;
 	}
 
-	interface teamMember {
-		name: string;
-		src: string;
-		link: string;
-	}
-
 	const prizes: Prize[] = [
 		{
 			title: 'Stickers',
@@ -27,7 +21,7 @@
 		{
 			title: 'Steam Dev License',
 			hours: 'TIER 1',
-			description: 'we\'ll cover the steam direct fee to publish your game!!!',
+			description: "we'll cover the steam direct fee to publish your game!!!",
 			src: '/prizes/steamlicense.webp'
 		},
 		{
@@ -65,7 +59,7 @@
 			hours: 'TIER 2',
 			description: 'or another digicam of your choice',
 			src: '/prizes/martube-miffy-digicam.webp'
-		},
+		}
 	];
 
 	const prizeColors = [
@@ -166,6 +160,8 @@
 				>prizes</a
 			>
 			<a class="text-glow text-3xl text-yellow decoration-wavy hover:underline" href="#FAQ">FAQ</a>
+			<a class="text-glow text-3xl text-yellow decoration-wavy hover:underline" href="/docs">docs</a
+			>
 			<a class="text-glow text-3xl text-teal decoration-wavy hover:underline" href="#hero"
 				><i><b>sign up!</b></i></a
 			>
@@ -184,19 +180,19 @@
 		<h1 class="text-glow text-center text-2xl text-teal md:text-3xl">
 			make a visual novel, get cool prizes!
 		</h1>
-		<h1 class="max-w-2xl text-glow text-center text-xl text-yellow md:text-2xl">
+		<h1 class="text-glow max-w-2xl text-center text-xl text-yellow md:text-2xl">
 			<b>Storyboardtober is currently running!</b> make a visual novel in 1 month, and get prizes EVERY
 			DAY.
 		</h1>
 		<div class="m-6 flex w-full flex-col items-center justify-center gap-4 md:w-1/2 md:flex-row">
 			<a
-				class="w-4/5 rounded-4xl bg-teal p-4 text-2xl text-center outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest duration-200 hover:scale-105 hover:bg-whiteish hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
+				class="w-4/5 rounded-4xl bg-teal p-4 text-center text-2xl outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest duration-200 hover:scale-105 hover:bg-whiteish hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
 				href="#how"
 			>
 				GET STARTED
 			</a>
 			<a
-				class="w-4/5 rounded-4xl bg-pink-purple p-4 text-2xl text-center outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest duration-200 hover:scale-105 hover:bg-whiteish hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
+				class="w-4/5 rounded-4xl bg-pink-purple p-4 text-center text-2xl outline outline-purple-darkest drop-shadow-sm drop-shadow-purple-darkest duration-200 hover:scale-105 hover:bg-whiteish hover:drop-shadow-md hover:drop-shadow-purple-darkest md:w-auto"
 				href="https://forms.hackclub.com/storyboard-submit"
 			>
 				SUBMIT!
@@ -222,7 +218,9 @@
 		<div class="flex flex-col items-center justify-center gap-4" id="how">
 			<h1 class=" text-glow mt-16 text-4xl text-whiteish">HOW DOES STORYBOARD WORK?</h1>
 			<h2 class="text-glow m-4 text-2xl text-teal">learn how to make a visual novel...</h2>
-			<div class="grid w-full max-w-[95%] grid-cols-1 md:w-full xl:max-w-[80%] md:grid-cols-3 md:grid-rows-2">
+			<div
+				class="grid w-full max-w-[95%] grid-cols-1 md:w-full md:grid-cols-3 md:grid-rows-2 xl:max-w-[80%]"
+			>
 				<div class="how-container">
 					<div class="flex flex-row items-center justify-start gap-6">
 						<div class="how-number bg-magenta">1</div>
@@ -233,8 +231,11 @@
 						<a
 							href="https://slack.hackclub.com"
 							class="text-purple-mid underline hover:decoration-wavy">Hack Club Slack</a
-						>!
-						Next, join the official <a href="https://slack.hackclub.com" class="text-purple-mid underline hover:decoration-wavy">#storyboard channel</a> (it's like Discord) and create a post thread for your project.
+						>! Next, join the official
+						<a
+							href="https://slack.hackclub.com"
+							class="text-purple-mid underline hover:decoration-wavy">#storyboard channel</a
+						> (it's like Discord) and create a post thread for your project.
 					</p>
 					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_signup.png" />
 				</div>
@@ -244,8 +245,8 @@
 						<h1 class="text-3xl text-purple-darkest">write a story</h1>
 					</div>
 					<p class="mt-2 leading-5 text-purple-darkest">
-						Think of a project idea & write up your plot, characters, and dialogue. Try to include lots of
-						interactive options too :)
+						Think of a project idea & write up your plot, characters, and dialogue. Try to include
+						lots of interactive options too :)
 					</p>
 					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_write.png" />
 				</div>
@@ -272,18 +273,28 @@
 						>. Check out our
 						<a href="/placeholder" class="text-purple-mid underline hover:decoration-wavy"
 							>guides!</a
-						> And don't forget to post your progress - read the canvas titled <a href="https://hackclub.enterprise.slack.com/docs/T0266FRGM/F09616RN3AL" class="text-purple-mid underline hover:decoration-wavy">[IMPORTANT INFO] OVERVIEW</a> in the #storyboard channel!
+						>
+						And don't forget to post your progress - read the canvas titled
+						<a
+							href="https://hackclub.enterprise.slack.com/docs/T0266FRGM/F09616RN3AL"
+							class="text-purple-mid underline hover:decoration-wavy">[IMPORTANT INFO] OVERVIEW</a
+						> in the #storyboard channel!
 					</p>
 					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_code.png" />
 				</div>
 				<div class="how-container">
 					<div class="flex flex-row items-center justify-start gap-6">
 						<div class="how-number bg-pink-purple">5</div>
-						<h1 class="text-3xl text-purple-darkest">publish to github + x	itch.io</h1>
+						<h1 class="text-3xl text-purple-darkest">publish to github + itch.io</h1>
 					</div>
 					<p class="mt-2 leading-5 text-purple-darkest">
-						While you're coding, make a GitHub repository for your game and commit frequently (guide on how to do that <a href="https://docs.github.com/en/get-started/quickstart" target="_blank" class="text-purple-mid underline hover:decoration-wavy">here</a>).
-						Upload your game to <a
+						While you're coding, make a GitHub repository for your game and commit frequently (guide
+						on how to do that <a
+							href="https://docs.github.com/en/get-started/quickstart"
+							target="_blank"
+							class="text-purple-mid underline hover:decoration-wavy">here</a
+						>). Upload your game to
+						<a
 							href="https://itch.io"
 							target="_blank"
 							class="text-purple-mid underline hover:decoration-wavy">itch.io</a
@@ -307,21 +318,19 @@
 			<h2 class="prizes-text m-4 text-2xl text-white" id="prizes">...and we'll send you prizes!</h2>
 
 			<div class="sbtb-box yellow mx-4!">
-				<h1 class="mx-6 text-2xl md:text-3xl text-purple-darkest underline mb-4">
+				<h1 class="mx-6 mb-4 text-2xl text-purple-darkest underline md:text-3xl">
 					how to get free stickers for <b>Storyboardtober</b>
 				</h1>
-				<ol class="text-lg md:text-xl leading-10 text-purple-dark list-decimal text-left px-4">
-					<li>work on your visual novel for just 1 hour every day! (yes, you can work on it for
-						longer.)</li>
+				<ol class="list-decimal px-4 text-left text-lg leading-10 text-purple-dark md:text-xl">
 					<li>
-						incorporate the theme of the day into your visual novel somehow :0
+						work on your visual novel for just 1 hour every day! (yes, you can work on it for
+						longer.)
 					</li>
+					<li>incorporate the theme of the day into your visual novel somehow :0</li>
 					<li>post what you did in your #storyboard message thread!</li>
 					<li>get a unique sticker for every day that you work on your project!</li>
 					<li>get a bigger prize at the end!!!</li>
-					<li>
-						you'll have YOUR OWN visual novel, a bunch of stickers & and an awesome prize :D
-					</li>
+					<li>you'll have YOUR OWN visual novel, a bunch of stickers & and an awesome prize :D</li>
 				</ol>
 			</div>
 			<StoryboardtoberCalendar />
@@ -377,10 +386,12 @@
 		</div> -->
 		<div>
 			<div class="mt-16">
-				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-4  md:gap-y-8">
+				<div
+					class="grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-y-8 lg:grid-cols-4"
+				>
 					{#each prizes as prize, i}
 						<div
-							class="w-full prize-card flex flex-col items-center justify-between p-6 text-center lg:aspect-3/5"
+							class="prize-card flex w-full flex-col items-center justify-between p-6 text-center lg:aspect-3/5"
 							style="background-color: {prizeColors[i % prizeColors.length]
 								.bg}; color: {prizeColors[i % prizeColors.length].text}"
 						>
@@ -399,53 +410,44 @@
 		</div>
 		<!-- guides -->
 		<div class="guides flex w-full flex-col items-center justify-center gap-4 text-center">
-			<h2 id="guides-home" class="mt-16 text-glow text-2xl text-white"><b>we have step-by-step guides to help:</b></h2>
+			<h2 id="guides-home" class="text-glow mt-16 text-2xl text-white">
+				<b>we have step-by-step guides to help:</b>
+			</h2>
 			<div
 				class="guides-grid m-6 grid w-full grid-cols-1 md:w-3/4 md:grid-cols-2 lg:w-2/3 xl:w-1/2"
 			>
-				<a
-					href="/placeholder"
-					class="guide-container"
-				>
+				<a href="/docs/quickstart" class="guide-container">
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
-						<h1 class="text-xl leading-5">
-							How to Track Hours <i class="text-sm">(so you can get prizes!)</i>
-						</h1>
-						<p>by @Susan</p>
+						<h1 class="text-xl leading-5">Storyboard 101: Quickstart Guide</h1>
+						<p>by @Kaylee</p>
 					</div>
 				</a>
-				<a
-					href="https://www.canva.com/design/DAGwcjmWlZQ/cUCpoAELlKlByVjLzmoCRw/view?embed"
-					class="guide-container"
-				>
+				<a href="/docs/storytelling" class="guide-container">
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
-						<h1 class="text-xl leading-5">Storywriting Guide</h1>
+						<h1 class="text-xl leading-5">Storytelling Guide</h1>
 						<p>by @yunfei</p>
 					</div>
 				</a>
-				<a href="https://ikealoverkat.github.io/storyboard2/" class="guide-container">
+				<a href="/docs" class="guide-container">
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
-						<p class="text-sm">HOW TO CODE A VISUAL NOVEL</p>
-						<h1 class="text-xl leading-5">Ren'Py Quickstart Doc</h1>
-						<p>by @kat</p>
+						<p class="text-sm">...</p>
+						<h1 class="text-xl leading-5">...</h1>
+						<p>by @...</p>
+					</div>
+				</a>
+				<a href="/docs" class="guide-container">
+					<img src="/cat.png" alt="" class="h-20 w-25" />
+					<div class="flex w-full flex-col gap-2 text-left">
+						<p class="text-sm">...</p>
+						<h1 class="text-xl leading-5">...</h1>
+						<p>by @...</p>
 					</div>
 				</a>
 				<a
-					href="https://www.canva.com/design/DAGwqnw-zrA/3dG1zywd0SWtJ3xOUwylVA/view?embed"
-					class="guide-container"
-				>
-					<img src="/cat.png" alt="" class="h-20 w-25" />
-					<div class="flex w-full flex-col gap-2 text-left">
-						<p class="text-sm">HOW TO CODE A VISUAL NOVEL</p>
-						<h1 class="text-xl leading-5">Ren'Py Quickstart Slide</h1>
-						<p>by @shyla</p>
-					</div>
-				</a>
-				<a
-					href="https://www.canva.com/design/DAGwqnw-zrA/3dG1zywd0SWtJ3xOUwylVA/view?embed"
+					href="/docs"
 					class="guide-container"
 				>
 					<img src="/cat.png" alt="" class="h-20 w-25" />
@@ -463,14 +465,14 @@
 				</div>
 			</div>
 			<a
-				href="placeholder"
+				href="/docs"
 				class="text-glow z-10 -mt-20 text-2xl text-yellow underline hover:decoration-wavy"
 				>view more →</a
 			>
 			<div class="collection mt-12">
 				<h2 class="text-glow z-10 my-8 text-2xl text-whiteish">
 					and a collection of <a
-						href="/placeholder"
+						href="/docs/assets"
 						class="text-pink-purple underline hover:decoration-wavy">free resources</a
 					> for you to use! :)
 				</h2>

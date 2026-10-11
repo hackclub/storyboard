@@ -2,6 +2,7 @@
 	import './docs.css';
 	import { page } from '$app/state';
 	import DocsSidebar from '$lib/components/docs/DocsSidebar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	let { children } = $props();
 
@@ -67,5 +68,6 @@
 			<span>Documentation</span>
 		</button>
 		{@render children()}
+		<Footer />
 	</div>
 </div>

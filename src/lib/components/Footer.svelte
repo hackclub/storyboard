@@ -1,4 +1,10 @@
 <script lang="ts">
+	interface teamMember {
+		name: string;
+		src: string;
+		link: string;
+	}
+
 	const teamMembers: teamMember[] = [
 		{
 			name: 'kat wang',
@@ -33,9 +39,7 @@
 	];
 </script>
 
-<div
-	class="footer flex flex-col items-center justify-center gap-2 bg-[#0C0C1B] p-8 text-center md:p-18"
->
+<div class="footer flex flex-col items-center justify-center gap-2 p-8 text-center md:p-18">
 	<h1 class="text-2xl text-pink-purple">
 		made with <b class="text-4xl text-magenta">♡</b> by teens, for teens
 	</h1>
