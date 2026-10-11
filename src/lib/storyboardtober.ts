@@ -49,7 +49,7 @@ export const storyboardtober: StoryboardtoberDay[] = [
 	{ day: 8, word: 'Stinky', image: '/theme-stickers/stinky.png' },
 	{ day: 9, word: 'Ram', image: '/theme-stickers/ram.png' },
 	{ day: 10, word: 'Mystical', image: '/theme-stickers/mystical.png' },
-	{ day: 11, word: 'Rescue', image: null },
+	{ day: 11, word: 'Rescue', image: '/theme-stickers/rescue.png' },
 	{ day: 12, word: 'Toss', image: null },
 	{ day: 13, word: 'Flimsy', image: null },
 	{ day: 14, word: 'Lady', image: null },
