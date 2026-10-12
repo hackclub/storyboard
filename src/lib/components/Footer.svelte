@@ -8,17 +8,17 @@
 	const teamMembers: teamMember[] = [
 		{
 			name: 'kat wang',
-			src: '/pfp_kat.png',
+			src: '/pfp_kat.webp',
 			link: 'https://kat.wang'
 		},
 		{
 			name: 'kaylee dinh',
-			src: '/pfp_kaylee.png',
+			src: '/pfp_kaylee.webp',
 			link: 'https://github.com/kaylz-d'
 		},
 		{
 			name: 'yunfei shuai',
-			src: '/pfp_yunfei.png',
+			src: '/pfp_yunfei.webp',
 			link: 'https://small-n-stupid.vercel.app/'
 		},
 		{
@@ -28,12 +28,12 @@
 		},
 		{
 			name: 'sophia duan',
-			src: '/cat.png',
+			src: '/cat.webp',
 			link: 'https://sophiaduan.dev'
 		},
 		{
 			name: 'herby',
-			src: '/pfp_herby.png',
+			src: '/pfp_herby.webp',
 			link: 'https://herbeon.github.io/links/'
 		}
 	];

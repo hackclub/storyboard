@@ -190,7 +190,7 @@
 		class="navbar fixed top-0 z-20 flex w-screen items-center justify-between bg-black/50 p-6 px-12 backdrop-blur-xs"
 	>
 		<a href="https://hackclub.com" target="_blank">
-			<img src="hc-flag.webp" class="w-30 duration-200 hover:scale-105" alt="hack club flag" />
+			<img src="/hc-flag.webp" class="w-30 duration-200 hover:scale-105" alt="hack club flag" />
 		</a>
 		<div class="flex gap-8">
 			<a class="text-glow text-3xl text-yellow decoration-wavy hover:underline" href="#how">about</a
@@ -459,7 +459,7 @@
 					href="/placeholder"
 					class="guide-container"
 				>
-					<img src="/cat.png" alt="" class="h-20 w-25" />
+					<img src="/cat.webp" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<h1 class="text-xl leading-5">Storyboard 101: Quickstart Guide</h1>
 						<p>by @Kaylee</p>
@@ -469,14 +469,14 @@
 					href="https://www.canva.com/design/DAGwcjmWlZQ/cUCpoAELlKlByVjLzmoCRw/view?embed"
 					class="guide-container"
 				>
-					<img src="/cat.png" alt="" class="h-20 w-25" />
+					<img src="/cat.webp" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<h1 class="text-xl leading-5">Storytelling Guide</h1>
 						<p>by @yunfei</p>
 					</div>
 				</a>
 				<a href="https://ikealoverkat.github.io/storyboard2/" class="guide-container">
-					<img src="/cat.png" alt="" class="h-20 w-25" />
+					<img src="/cat.webp" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<p class="text-sm">...</p>
 						<h1 class="text-xl leading-5">...</h1>
@@ -487,7 +487,7 @@
 					href="https://www.canva.com/design/DAGwqnw-zrA/3dG1zywd0SWtJ3xOUwylVA/view?embed"
 					class="guide-container"
 				>
-					<img src="/cat.png" alt="" class="h-20 w-25" />
+					<img src="/cat.webp" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<p class="text-sm">...</p>
 						<h1 class="text-xl leading-5">...</h1>
