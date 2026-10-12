@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="placeholder flex h-screen w-screen flex-col items-center justify-center bg-[url('/bg-window.png')] bg-cover text-center"
+	class="placeholder flex h-screen w-screen flex-col items-center justify-center bg-[url('/bg-window.webp')] bg-cover text-center"
 >
 	<div class="z-10 flex flex-col items-center justify-center gap-4 p-12">
 		<button onclick={goBack} class="text-glow text-xl text-teal underline hover:decoration-wavy"

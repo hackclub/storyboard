@@ -11,12 +11,51 @@
 		answer: string;
 	}
 
+	interface teamMember {
+		name: string;
+		src: string;
+		link: string;
+	}
+
+	const teamMembers: teamMember[] = [
+		{
+			name: 'kat wang',
+			src: '/pfp_kat.webp',
+			link: 'https://kat.wang'
+		},
+		{
+			name: 'kaylee dinh',
+			src: '/pfp_kaylee.webp',
+			link: 'https://github.com/kaylz-d'
+		},
+		{
+			name: 'yunfei shuai',
+			src: '/pfp_yunfei.webp',
+			link: 'https://small-n-stupid.vercel.app/'
+		},
+		{
+			name: 'susan zheng',
+			src: '/pfp_susan.HEIC',
+			link: 'https://github.com/uselesslyuseful'
+		},
+		{
+			name: 'sophia duan',
+			src: '/cat.webp',
+			link: 'https://sophiaduan.dev'
+		},
+		{
+			name: 'herby',
+			src: '/pfp_herby.webp',
+			link: 'https://herbeon.github.io/links/'
+		}				
+	];
+
 	const prizes: Prize[] = [
 		{
 			title: 'Stickers',
 			hours: 'free!',
 			description: 'limited edition for storyboardtober participants!',
-			src: '/theme-stickers/apple.png'
+			src: '/theme-stickers/apple.webp'
 		},
 		{
 			title: 'Steam Dev License',
@@ -151,7 +190,7 @@
 		class="navbar fixed top-0 z-20 flex w-screen items-center justify-between bg-black/50 p-6 px-12 backdrop-blur-xs"
 	>
 		<a href="https://hackclub.com" target="_blank">
-			<img src="hc-flag.png" class="w-30 duration-200 hover:scale-105" alt="hack club flag" />
+			<img src="hc-flag.webp" class="w-30 duration-200 hover:scale-105" alt="hack club flag" />
 		</a>
 		<div class="flex gap-8">
 			<a class="text-glow text-3xl text-yellow decoration-wavy hover:underline" href="#how">about</a
@@ -170,10 +209,10 @@
 	<!-- hero -->
 	<div
 		id="hero"
-		class="hero flex h-screen w-screen flex-col items-center justify-center gap-2 bg-[url('/bg-hero.png')] bg-cover"
+		class="hero flex h-screen w-screen flex-col items-center justify-center gap-2 bg-[url('/bg-hero.webp')] bg-cover"
 	>
 		<img
-			src="/logo-with-caption.png"
+			src="/logo-with-caption.webp"
 			alt="hack club's storyboard: for teens 13-18"
 			class="m-4 w-3/4 md:w-1/3"
 		/>
@@ -212,7 +251,7 @@
 	</div>
 	<!-- windows -->
 	<div
-		class="window flex flex-col items-center justify-center gap-4 bg-purple-darkest bg-[url('/bg-window.png')] bg-cover text-center"
+		class="window flex flex-col items-center justify-center gap-4 bg-purple-darkest bg-[url('/bg-window.webp')] bg-cover text-center"
 	>
 		<!-- how it work? -->
 		<div class="flex flex-col items-center justify-center gap-4" id="how">
@@ -237,7 +276,7 @@
 							class="text-purple-mid underline hover:decoration-wavy">#storyboard channel</a
 						> (it's like Discord) and create a post thread for your project.
 					</p>
-					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_signup.png" />
+					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_signup.webp" />
 				</div>
 				<div class="how-container">
 					<div class="flex flex-row items-center justify-start gap-6">
@@ -248,7 +287,7 @@
 						Think of a project idea & write up your plot, characters, and dialogue. Try to include
 						lots of interactive options too :)
 					</p>
-					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_write.png" />
+					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_write.webp" />
 				</div>
 				<div class="how-container">
 					<div class="flex flex-row items-center justify-start gap-6">
@@ -258,7 +297,7 @@
 					<p class="mt-2 leading-5 text-purple-darkest">
 						Draw up sprites, backgrounds, logos, and other assets for your game!
 					</p>
-					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_draw.png" />
+					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_draw.webp" />
 				</div>
 				<div class="how-container">
 					<div class="flex flex-row items-center justify-start gap-6">
@@ -280,7 +319,7 @@
 							class="text-purple-mid underline hover:decoration-wavy">[IMPORTANT INFO] OVERVIEW</a
 						> in the #storyboard channel!
 					</p>
-					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_code.png" />
+					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_code.webp" />
 				</div>
 				<div class="how-container">
 					<div class="flex flex-row items-center justify-start gap-6">
@@ -300,7 +339,7 @@
 							class="text-purple-mid underline hover:decoration-wavy">itch.io</a
 						> so anyone on the internet can play it!
 					</p>
-					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_ship.png" />
+					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_ship.webp" />
 				</div>
 				<div class="how-container">
 					<div class="flex flex-row items-center justify-start gap-6">
@@ -311,7 +350,7 @@
 						CONGRATULATIONS!! submit your game to Storyboard, and get some super-cool hard-earned
 						prizes :D
 					</p>
-					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_prize.png" />
+					<img class="mx-auto mt-4 w-full outline" alt="" src="/how_prize.webp" />
 				</div>
 			</div>
 
@@ -416,21 +455,27 @@
 			<div
 				class="guides-grid m-6 grid w-full grid-cols-1 md:w-3/4 md:grid-cols-2 lg:w-2/3 xl:w-1/2"
 			>
-				<a href="/docs/quickstart" class="guide-container">
+				<a
+					href="/placeholder"
+					class="guide-container"
+				>
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<h1 class="text-xl leading-5">Storyboard 101: Quickstart Guide</h1>
 						<p>by @Kaylee</p>
 					</div>
 				</a>
-				<a href="/docs/storytelling" class="guide-container">
+				<a
+					href="https://www.canva.com/design/DAGwcjmWlZQ/cUCpoAELlKlByVjLzmoCRw/view?embed"
+					class="guide-container"
+				>
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<h1 class="text-xl leading-5">Storytelling Guide</h1>
 						<p>by @yunfei</p>
 					</div>
 				</a>
-				<a href="/docs" class="guide-container">
+				<a href="https://ikealoverkat.github.io/storyboard2/" class="guide-container">
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<p class="text-sm">...</p>
@@ -438,7 +483,10 @@
 						<p>by @...</p>
 					</div>
 				</a>
-				<a href="/docs" class="guide-container">
+				<a
+					href="https://www.canva.com/design/DAGwqnw-zrA/3dG1zywd0SWtJ3xOUwylVA/view?embed"
+					class="guide-container"
+				>
 					<img src="/cat.png" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<p class="text-sm">...</p>
@@ -450,14 +498,14 @@
 					href="/docs"
 					class="guide-container"
 				>
-					<img src="/cat.png" alt="" class="h-20 w-25" />
+					<img src="/cat.webp" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<h1 class="text-xl leading-4">...</h1>
 						<p>by @...</p>
 					</div>
 				</a>
 				<div class="guide-container">
-					<img src="/cat.png" alt="" class="h-20 w-25" />
+					<img src="/cat.webp" alt="" class="h-20 w-25" />
 					<div class="flex w-full flex-col gap-2 text-left">
 						<h1 class="text-xl leading-4">...</h1>
 						<p>by @...</p>

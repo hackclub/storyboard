@@ -3,12 +3,12 @@
  *
  * ── how to add your stickers ────────────────────────────────────────────────
  *   drop the file in `static/` and point that day's `image` at it:
- *   `image: '/stickers/oct-07.png'`
+ *   `image: '/stickers/oct-07.webp'`
  *
  *   Every day is independent, so add them one at a time as you draw them. A day
  *   with `image: null` renders an empty slot until you fill it in.
  *
- *   NOTE: days 1-5 currently point at `cat.png` as a stand-in because their
+ *   NOTE: days 1-5 currently point at `cat.webp` as a stand-in because their
  *   stickers ship revealed — swap those for the real art before launch.
  *
  * NOTE: this file ships to the browser, so any path you fill in is readable in
@@ -39,20 +39,20 @@ export interface StoryboardtoberDay {
 
 export const storyboardtober: StoryboardtoberDay[] = [
 	// days 1-5 ship already revealed, so they need a real image right away
-	{ day: 1, word: 'Apple', image: '/theme-stickers/apple.png' },
-	{ day: 2, word: 'Relic', image: '/theme-stickers/relic.png' },
-	{ day: 3, word: 'Miniature', image: '/theme-stickers/miniature.png' },
-	{ day: 4, word: 'Cactus', image: '/theme-stickers/cactus.png' },
-	{ day: 5, word: 'Smack', image: '/theme-stickers/smack-hc.png' },
-	{ day: 6, word: 'Ogre', image: '/theme-stickers/OgreInktober2026.png' },
-	{ day: 7, word: 'Panic', image: '/theme-stickers/panic.png' },
-	{ day: 8, word: 'Stinky', image: '/theme-stickers/stinky.png' },
-	{ day: 9, word: 'Ram', image: '/theme-stickers/ram.png' },
-	{ day: 10, word: 'Mystical', image: '/theme-stickers/mystical.png' },
-	{ day: 11, word: 'Rescue', image: '/theme-stickers/rescue.png' },
-	{ day: 12, word: 'Toss', image: null },
-	{ day: 13, word: 'Flimsy', image: null },
-	{ day: 14, word: 'Lady', image: null },
+	{ day: 1, word: 'Apple', image: '/theme-stickers/apple.webp' },
+	{ day: 2, word: 'Relic', image: '/theme-stickers/relic.webp' },
+	{ day: 3, word: 'Miniature', image: '/theme-stickers/miniature.webp' },
+	{ day: 4, word: 'Cactus', image: '/theme-stickers/cactus.webp' },
+	{ day: 5, word: 'Smack', image: '/theme-stickers/smack-hc.webp' },
+	{ day: 6, word: 'Ogre', image: '/theme-stickers/OgreInktober2026.webp' },
+	{ day: 7, word: 'Panic', image: '/theme-stickers/panic.webp' },
+	{ day: 8, word: 'Stinky', image: '/theme-stickers/stinky.webp' },
+	{ day: 9, word: 'Ram', image: '/theme-stickers/ram.webp' },
+	{ day: 10, word: 'Mystical', image: '/theme-stickers/mystical.webp' },
+	{ day: 11, word: 'Rescue', image: '/theme-stickers/rescue.webp' },
+	{ day: 12, word: 'Toss', image: '/theme-stickers/hc_sticker_toss__ver._text_.webp' },
+	{ day: 13, word: 'Flimsy', image: '/theme-stickers/hc_sticker_flimsy__ver._dark_.webp' },
+	{ day: 14, word: 'Lady', image: '/theme-stickers/lady.webp' },
 	{ day: 15, word: 'Hooray', image: null },
 	{ day: 16, word: 'Gangly', image: null },
 	{ day: 17, word: 'Contraption', image: null },
