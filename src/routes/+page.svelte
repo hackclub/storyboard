@@ -35,7 +35,7 @@
 		},
 		{
 			name: 'susan zheng',
-			src: '/pfp_susan.HEIC',
+			src: '/pfp_susan.png',
 			link: 'https://github.com/uselesslyuseful'
 		},
 		{
@@ -47,6 +47,11 @@
 			name: 'herby',
 			src: '/pfp_herby.webp',
 			link: 'https://herbeon.github.io/links/'
+		},
+		{
+			name: 'august ren',
+			src: '/pfp_yule.webp',
+			link: ''
 		}				
 	];
 
@@ -190,7 +195,7 @@
 		class="navbar fixed top-0 z-20 flex w-screen items-center justify-between bg-black/50 p-6 px-12 backdrop-blur-xs"
 	>
 		<a href="https://hackclub.com" target="_blank">
-			<img src="/hc-flag.webp" class="w-30 duration-200 hover:scale-105" alt="hack club flag" />
+			<img src="hc-flag.webp" class="w-30 duration-200 hover:scale-105" alt="hack club flag" />
 		</a>
 		<div class="flex gap-8">
 			<a class="text-glow text-3xl text-yellow decoration-wavy hover:underline" href="#how">about</a

@@ -35,6 +35,11 @@
 			name: 'herby',
 			src: '/pfp_herby.webp',
 			link: 'https://herbeon.github.io/links/'
+		},
+		{
+			name: 'august ren',
+			src: '/pfp_yule.webp',
+			link: ''
 		}
 	];
 </script>
