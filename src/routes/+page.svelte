@@ -64,7 +64,7 @@
 		},
 		{
 			title: 'Steam Dev License',
-			hours: 'TIER 1',
+			hours: 'TIER 3',
 			description: "we'll cover the steam direct fee to publish your game!!!",
 			src: '/prizes/steamlicense.webp'
 		},
