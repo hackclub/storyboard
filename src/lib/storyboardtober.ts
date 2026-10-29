@@ -62,14 +62,14 @@ export const storyboardtober: StoryboardtoberDay[] = [
 	{ day: 21, word: 'Hero', image: '/theme-stickers/hero.webp' },
 	{ day: 22, word: 'Beacon', image: '/theme-stickers/beacon.png' },
 	{ day: 23, word: 'Dapper', image: '/theme-stickers/DapperInktober2026.webp' },
-	{ day: 24, word: 'Bake', image: null },
-	{ day: 25, word: 'Fracture', image: null },
-	{ day: 26, word: 'Zip', image: null },
-	{ day: 27, word: 'Dumb', image: null },
-	{ day: 28, word: 'Trophy', image: null },
+	{ day: 24, word: 'Bake', image: '/theme-stickers/bake.png' },
+	{ day: 25, word: 'Fracture', image: '/theme-stickers/fracture.webp' },
+	{ day: 26, word: 'Zip', image: '/theme-stickers/zip.webp' },
+	{ day: 27, word: 'Dumb', image: '/theme-stickers/dumb.png' },
+	{ day: 28, word: 'Trophy', image: '/theme-stickers/trophy.png' },
 	{ day: 29, word: 'Tusk', image: null },
-	{ day: 30, word: 'Cookie', image: null },
-	{ day: 31, word: 'Flex', image: null }
+	{ day: 30, word: 'Cookie', image: '/theme-stickers/cookie.webp' },
+	{ day: 31, word: 'Flex', image: '/theme-stickers/flex.webp' }
 ];
 
 /** Sunday-first, to match `Date#getDay`. */
