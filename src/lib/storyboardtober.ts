@@ -66,7 +66,7 @@ export const storyboardtober: StoryboardtoberDay[] = [
 	{ day: 25, word: 'Fracture', image: '/theme-stickers/fracture.webp' },
 	{ day: 26, word: 'Zip', image: '/theme-stickers/zip.webp' },
 	{ day: 27, word: 'Dumb', image: '/theme-stickers/dumb.png' },
-	{ day: 28, word: 'Trophy', image: '/theme-stickers/trophy.png' },
+	{ day: 28, word: 'Trophy', image: '/theme-stickers/trophy.webp' },
 	{ day: 29, word: 'Tusk', image: null },
 	{ day: 30, word: 'Cookie', image: '/theme-stickers/cookie.webp' },
 	{ day: 31, word: 'Flex', image: '/theme-stickers/flex.webp' }
