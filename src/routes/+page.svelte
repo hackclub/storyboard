@@ -52,7 +52,7 @@
 			name: 'august ren',
 			src: '/pfp_yule.webp',
 			link: ''
-		}				
+		}
 	];
 
 	const prizes: Prize[] = [
@@ -206,8 +206,8 @@
 			<a class="text-glow text-3xl text-yellow decoration-wavy hover:underline" href="#FAQ">FAQ</a>
 			<a class="text-glow text-3xl text-yellow decoration-wavy hover:underline" href="/docs">docs</a
 			>
-			<a class="text-glow text-3xl text-teal decoration-wavy hover:underline" href="#hero"
-				><i><b>sign up!</b></i></a
+			<a class="text-glow text-3xl text-teal decoration-wavy hover:underline" href="https://forms.hackclub.com/storyboard-submit"
+				><i><b>submit!</b></i></a
 			>
 		</div>
 	</div>
