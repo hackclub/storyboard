@@ -310,7 +310,7 @@
 						<h1 class="text-3xl text-purple-darkest">code</h1>
 					</div>
 					<p class="mt-2 leading-5 text-purple-darkest">
-						First time coding? We reccomend using <a
+						First time coding? We recommend using <a
 							href="https://www.renpy.org/"
 							target="_blank"
 							class="text-purple-mid underline hover:decoration-wavy">Ren'Py</a
